@@ -7,10 +7,12 @@ import CallOutBanner from "../components/callout-banner"
 
 const ContactPage = () => (
   <Layout>
-    <SEO title="Contact" />
-    <h1>Hi from the contact page.</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
+    <div class="container">
+      <SEO title="Contact" />
+      <h1>Hi from the contact page.</h1>
+      <p>Welcome to page 2</p>
+      <Link to="/">Go back to the homepage</Link>
+    </div>
     <CallOutBanner/>
   </Layout>
 )
