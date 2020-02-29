@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import CallOutBanner from "../components/callout-banner/callout-banner"
+import CallOutBanner from "../components/callout-banner"
 
 const AboutPage = () => (
   <Layout>
