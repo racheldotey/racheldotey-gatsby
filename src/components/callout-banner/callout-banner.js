@@ -1,8 +1,10 @@
 import { Link } from "gatsby"
 import React from "react"
 
+import './callout-banner.scss'
+
 const CallOutBanner = () => (
-    <section id="contact">
+    <section class="callout-banner">
       <div class="container">
         <h2>Contact</h2>
         <div>

@@ -7,10 +7,10 @@ import './footer.scss'
 const Footer = ({ siteTitle }) => (
   <footer class="footer">
     <div class="container">
-      <p>
-        © {new Date().getFullYear()}, Built with
-    {` `}
-        <a href="https://www.nodejs.org">Node</a> and <a href="https://www.gatsbyjs.org">Gatsby</a></p>
+      <p>© 2012-{new Date().getFullYear()} <Link to="#contact">Contact</Link><a href="https://www.racheldotey.com/about/contact">Rachel Dotey</a> All Rights Reserved. | <a href="/policies/">Website Policies</a></p>
+    </div>
+    <div class="container">
+      <p>This website built with <a href="https://www.nodejs.org">Node</a>, React and <a href="https://www.gatsbyjs.org">Gatsby</a> on Netifly.com.</p>
     </div>
   </footer>
 )
