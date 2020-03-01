@@ -27,6 +27,19 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/favicon.png`,
       },
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Crimson Text`,
+            variants: [`400`, `600`]
+          },
+          {
+            family: `Open Sans`,
+            variants: [`400`, `700`]
+          },
+        ],
+      },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
