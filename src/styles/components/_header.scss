@@ -1,0 +1,17 @@
+.navbar {
+    background-color: #ffffff;
+
+    .navbar-brand {
+        .title {
+            display: block;
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+            font-weight: bold;
+        }
+        .tagline {
+            display: block;
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
+    }
+}

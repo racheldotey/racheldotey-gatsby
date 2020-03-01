@@ -1,10 +1,10 @@
 section.callout-banner {
-    padding: 20vh 0 10vh;
+    padding: 15vh 0;
     //Background color
     font-weight: 400;
-    color: rgb(224, 175, 202);
+    color: #ffffff;
     background-image: linear-gradient(135deg,#02aab0,#00cdac);
-    -webkit-clip-path: polygon(0 15vh,100% 0,100% 100%,0 100%);
+    -webkit-clip-path: polygon(0 0,100% 10vh,100% 100%,0 90%);
 }
 
 .bunny {

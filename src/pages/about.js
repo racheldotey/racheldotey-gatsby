@@ -10,8 +10,7 @@ const AboutPage = () => (
     <SEO title="About" />
     <div class="container">
       <h1 className="page-header">Hi from the about page</h1>
-      <p>Welcome to page 2</p>
-      <Link to="/">Go back to the homepage</Link>
+      
     </div>
     <div className="page-end"></div>
     <CallOutBanner />

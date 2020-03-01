@@ -5,13 +5,11 @@ import { Navbar, Nav } from "react-bootstrap"
 
 const Header = ({ siteTitle }) => (
   <header>
-    <Navbar collapseOnSelect expand="sm" bg="light" variant="light">
+    <Navbar collapseOnSelect expand="sm">
       <div className="container">
         <Navbar.Brand href="/">
-          <div className="title-area">
-            <span className="site-title">{siteTitle}</span>
-            <span className="site-description">How can I make your business better?</span>
-          </div>
+          <span className="title">{siteTitle}</span>
+          <span className="tagline">Websites & Software</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
