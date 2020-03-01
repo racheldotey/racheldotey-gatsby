@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import { Form, Button } from "react-bootstrap"
 
 import Layout from "../components/layout"
@@ -7,8 +6,8 @@ import SEO from "../components/seo"
 
 const ContactPage = () => (
   <Layout>
-    <div class="container">
-      <SEO title="Contact" />
+    <SEO title="Contact" />
+    <div className="container">
       <h1>Hi from the contact page.</h1>
       <p>Welcome to page 2</p>
       <Form>

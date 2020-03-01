@@ -1,0 +1,18 @@
+body {    
+    color: #272341;
+}
+
+a {
+    color: #02aab0;
+    &:link {
+        color: #02aab0;
+    }
+    
+    &:visited {
+        color: #007a7e;
+    }
+    
+    &:focus, &:hover, &:active {
+        color: #00cdac;
+    }
+}

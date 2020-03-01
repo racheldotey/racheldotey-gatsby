@@ -3,15 +3,14 @@ import PropTypes from "prop-types"
 import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
 
-import LogoCSS3 from "../images/logo-css3"
-import LogoGatsbyJS from "../images/logo-gatsbyjs"
-import LogoGraphql from "../images/logo-graphql"
-import LogoHTML5 from "../images/logo-html5"
-import LogoNodeJS from "../images/logo-nodejs"
-import LogoReactJS from "../images/logo-reactjs"
-import LogoSASS from "../images/logo-sass"
-import Signature from "../images/signature-black"
-import './footer.scss'
+import LogoCSS3 from "./images/logo-css3"
+import LogoGatsbyJS from "./images/logo-gatsbyjs"
+import LogoGraphql from "./images/logo-graphql"
+import LogoHTML5 from "./images/logo-html5"
+import LogoNodeJS from "./images/logo-nodejs"
+import LogoReactJS from "./images/logo-reactjs"
+import LogoSASS from "./images/logo-sass"
+import Signature from "./images/signature-black"
 
 const Footer = ({ siteTitle }) => (
   <footer class="footer">
