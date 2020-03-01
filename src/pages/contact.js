@@ -8,7 +8,7 @@ const ContactPage = () => (
   <Layout>
     <SEO title="Contact" />
     <div className="container">
-      <h1>Hi from the contact page.</h1>
+      <h1 className="page-header">Hi from the contact page.</h1>
       <p>Welcome to page 2</p>
       <Form>
         <Form.Group controlId="contactBannerName">
@@ -31,6 +31,7 @@ const ContactPage = () => (
         </Button>
       </Form>
     </div>
+    <div className="page-end"></div>
   </Layout>
 )
 

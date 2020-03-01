@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import React from "react"
 
 const CallOutBanner = () => (
-    <section class="full-banner callout-banner">
+    <section class="callout-banner">
       <div class="container">
         <h2>Contact</h2>
         <div>
