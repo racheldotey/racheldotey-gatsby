@@ -1,4 +1,10 @@
 footer {
+    .footer-main {
+        color: #777;
+        border-top: 1px solid #e1e1e1;
+        padding: 5em 0;
+    }
+
     .footer-built-with {
         color: #777;
         border-top: 1px solid #e1e1e1;
@@ -6,8 +12,8 @@ footer {
         text-align: center;
     }
 
-    .footer-copy {
-        padding: 5em 0;
+    .footer-copywrite {
+        padding: 3em 0;
         font-size: .75em;
         color: #777;
         border-top: 1px solid #e1e1e1;
