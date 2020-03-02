@@ -24,8 +24,8 @@ const ContactBanner = () => (
                 </div>
             </div>
             </Col>
-            <Col sm={12} md={7} lg={6} xl={5} className="">
-            <ContactForm />
+            <Col sm={12} md={7} lg={6} xl={5}>
+                <ContactForm />
             </Col>
         </Row>
         </Container>
