@@ -6,10 +6,13 @@ import PictureDesk from "./images/picture-desk-macbook"
 
 const IntroductionBanner = () => (
     <section className="introduction-banner">
-        <div className="d-flex h-100">
-            <Container className="justify-content-center align-self-center">
-                <Row>
-                    <Col>
+        <div>
+            <Container>
+                <Row className="d-flex h-100">
+                    <Col sm={12} md={4} lg={6} className="justify-content-center align-self-center text-center">
+                        <PictureDesk />
+                    </Col>
+                    <Col sm={12} md={8} lg={6}>
                         <span className="h2">Welcome!</span>
                         <p className="lead">I am a full stack software developer with experience making
                     interative web experiences.</p>
@@ -18,9 +21,6 @@ const IntroductionBanner = () => (
                         <div className="text-center">
                             <Link to="#contact" className="btn btn-highlight-reverse btn-lg">Lets Talk</Link>
                         </div>
-                    </Col>
-                    <Col className="text-center">
-                        <PictureDesk />
                     </Col>
                 </Row>
             </Container>
