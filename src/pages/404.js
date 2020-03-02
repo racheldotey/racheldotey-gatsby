@@ -15,7 +15,7 @@ const NotFoundPage = () => (
       <p>It's possible that the resource was moved, or maybe you just hit a route that doesn''t exist... the sadness.</p>
       <Link to="/">Go back to the homepage.</Link>
     </div>
-    <div className="page-end divider"></div>
+    <div className="page-end footer-divider"></div>
   </Layout>
 )
 

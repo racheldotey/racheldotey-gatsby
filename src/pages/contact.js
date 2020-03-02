@@ -1,8 +1,9 @@
 import React from "react"
-import { Container, Row, Col, Form, Button } from "react-bootstrap"
+import { Container, Row, Col } from "react-bootstrap"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import ContactForm from "../components/form-contact"
 
 const ContactPage = () => (
   <Layout>
@@ -36,31 +37,7 @@ const ContactPage = () => (
           </div>
         </Col>
         <Col sm={12} md={7} lg={6} xl={5} className="">
-          <Form className="contact-form">
-            <Form.Group controlId="contactPageName">
-              <Form.Label>Name</Form.Label>
-              <Form.Control type="text" placeholder="Enter your Name" />
-            </Form.Group>
-
-            <Form.Group controlId="contactPageEmail">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="Your best email" />
-            </Form.Group>
-
-            <Form.Group controlId="contactPagePhone">
-              <Form.Label>Phone</Form.Label>
-              <Form.Control type="text" placeholder="Phone number" />
-            </Form.Group>
-
-            <Form.Group controlId="contactPageMessage">
-              <Form.Label>Message</Form.Label>
-              <Form.Control as="textarea" rows="3" />
-            </Form.Group>
-
-            <Button variant="highlight" type="submit" size="lg">
-              Submit
-            </Button>
-          </Form>
+          <ContactForm />
         </Col>
       </Row>
     </Container>

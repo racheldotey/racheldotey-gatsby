@@ -43,7 +43,7 @@ const ServicesPage = () => (
         </Col>
       </Row>
     </Container>
-    <div className="page-end divider"></div>
+    <div className="page-end footer-divider"></div>
   </Layout>
 )
 

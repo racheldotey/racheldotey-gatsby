@@ -15,6 +15,7 @@ const IndexPage = () => (
     <IntroductionBanner />
     <ServicesBanner/>
     <ContactBanner/>
+    <div className="page-end footer-divider"></div>
   </Layout>
 )
 
