@@ -14,14 +14,25 @@ footer {
         span {
             display: block;
             margin-bottom: .5em;
-            font-size: .75em;
-            font-style: italic;
+            font-family: 'Crimson Text';
         }
     }
 
     .footer-copywrite {
         color: #C0C0C0;
         padding: 3em 0;
-        font-size: .75em;
+        font-size: .9em;
+        font-family: 'Crimson Text';
+
+        a {
+            color: rgb(160, 202, 202);
+            &:link, &:visited {
+                color: rgb(160, 202, 202);
+            }
+            
+            &:focus, &:hover, &:active {
+                color: rgb(160, 202, 202);
+            }
+        }
     }
 }

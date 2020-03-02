@@ -1,0 +1,28 @@
+div.contact-meta {
+    margin: 0 auto;
+    text-align: center;
+
+    .meta {
+        padding: 1em;
+        margin-bottom: 1em;
+    }
+
+    .divider {
+        border-bottom: 1px solid #F8F8F8;
+    }
+}
+
+form.contact-form {
+    border: 1px solid #F8F8F8;
+    background-color: #ffffff;
+    padding: 2em;
+
+    
+    background-image: linear-gradient(135deg,#02aab0,#00cdac);
+    -webkit-background-clip: text;
+    border: 3px solid transparent;
+    -webkit-border-image: linear-gradient(135deg,#02aab0,#00cdac);
+    -o-border-image: linear-gradient(135deg,#02aab0,#00cdac);
+    border-image: linear-gradient(135deg,#02aab0,#00cdac);
+    border-image-slice: 1;
+}
