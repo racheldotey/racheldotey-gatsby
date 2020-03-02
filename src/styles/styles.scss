@@ -2,12 +2,12 @@
 @import './base/layout';
 @import './base/typography';
 
+@import './components/banner-callout';
+@import './components/banner-greetings';
+@import './components/banner-introduction';
 @import './components/buttons';
-@import './components/callout-banner';
 @import './components/footer';
-@import './components/greetings-banner';
 @import './components/header';
-@import './components/introduction-banner';
 
 @import './pages/about';
 @import './pages/contact';

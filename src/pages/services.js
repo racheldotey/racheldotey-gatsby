@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import CallOutBanner from "../components/callout-banner"
+import CallOutBanner from "../components/banner-callout"
 
 const ServicesPage = () => (
   <Layout>

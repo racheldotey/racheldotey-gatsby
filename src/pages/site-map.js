@@ -4,7 +4,8 @@ import { Container, Row, Col } from "react-bootstrap"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import CallOutBanner from "../components/callout-banner"
+
+import ProjectsBanner from "../components/banner-projects"
 
 const ServicesPage = () => (
   <Layout>
@@ -42,8 +43,7 @@ const ServicesPage = () => (
         </Col>
       </Row>
     </Container>
-    <div className="page-end"></div>
-    <CallOutBanner />
+    <div className="page-end divider"></div>
   </Layout>
 )
 

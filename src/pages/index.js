@@ -2,11 +2,11 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import GreetingBanner from "../components/greeting-banner"
-import IntroductionBanner from "../components/introduction-banner"
-import ServicesBanner from "../components/services-banner"
-import ProjectsBanner from "../components/projects-banner"
-import ContactBanner from "../components/contact-banner"
+import GreetingBanner from "../components/banner-greeting"
+import IntroductionBanner from "../components/banner-introduction"
+import ServicesBanner from "../components/banner-services"
+import ProjectsBanner from "../components/banner-projects"
+import ContactBanner from "../components/banner-contact"
 
 const IndexPage = () => (
   <Layout>

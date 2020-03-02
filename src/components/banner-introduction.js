@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
 
-import PictureDesk from "../components/images/picture-desk-macbook"
+import PictureDesk from "./images/picture-desk-macbook"
 
 const IntroductionBanner = () => (
     <section className="introduction-banner">
