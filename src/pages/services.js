@@ -12,7 +12,7 @@ const ServicesPage = () => (
     <Container>
       <Row className="justify-content-md-center">
         <Col md={12} lg={10} className="page-intro">
-          <h1 className="title">How can I help?</h1>
+          <h1 className="title">I can do a lot with software, so what can I do to best improve your customer experience?</h1>
           <p className="lead">I work with small businesses to create an online brand through web design an marketing. Would a website redesign improve your image with customers? Do you have an application or software idea?<br />
             Contact me below and lets talk about what we can build together.</p>
         </Col>

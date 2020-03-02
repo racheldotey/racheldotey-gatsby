@@ -1,3 +1,15 @@
 section.services-banner {
     padding: 7rem 0;
+
+    .banner-services-image {
+        text-align: center;
+        .gatsby-image-wrapper {
+            img {
+                padding: 5px;
+                border: 1px solid #F0F0F0;
+                border-radius: 5px;
+                margin: 0 auto;
+            }
+        }
+    }
 }

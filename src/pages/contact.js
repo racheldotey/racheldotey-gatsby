@@ -11,9 +11,9 @@ const ContactPage = () => (
     <Container>
       <Row className="justify-content-md-center">
         <Col md={12} lg={10} className="page-intro">
-          <h1 className="title">How can I help?</h1>
-          <p className="lead">I work with small businesses to create an online brand through web design an marketing. Would a website redesign improve your image with customers? Do you have an application or software idea?<br/>
-          Contact me below and lets talk about what we can build together.</p>
+          <h1 className="title">Would you like to know more?</h1>
+          <p className="lead">Are you interested in learning about how I can improve your customer experience? Fill out this form and I will get right back to you for a free phone conseltation.</p>
+          <p className="lead">There's no oblibilation, I just want to learn more about your business.</p>
         </Col>
       </Row>
     </Container>

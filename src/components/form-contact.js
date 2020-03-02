@@ -12,6 +12,9 @@ const ContactForm = () => (
         <Form.Group controlId="contacFormEmail">
             <Form.Label>Email address</Form.Label>
             <Form.Control type="email" placeholder="Your best email" />
+            <Form.Text className="text-muted">
+                We'll never share your email with anyone else.
+            </Form.Text>
         </Form.Group>
 
         <Form.Group controlId="contacFormPhone">
@@ -29,6 +32,7 @@ const ContactForm = () => (
                 Submit
             </Button>
         </div>
+
     </Form>
 )
 
