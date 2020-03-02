@@ -14,7 +14,6 @@ const IndexPage = () => (
     <GreetingBanner />
     <IntroductionBanner />
     <ServicesBanner/>
-    <ProjectsBanner/>
     <ContactBanner/>
   </Layout>
 )

@@ -21,11 +21,11 @@ const Footer = ({ siteTitle }) => (
             <h4>How can I make<br />
               <span className="highlight">your business better</span>?</h4>
 
-            <div class="buttons">
-              <a title="I would love to talk about your business!" href="contact" class="button button-size-large"><span>Lets Talk</span><i class="fal fa-long-arrow-right" aria-hidden="true"></i></a>
-
+            <div class="call-to-action">
+              <Link title="I would love to talk about your business!" to="/contact" className="btn btn-highlight btn-lg">
+                <span>Lets Talk</span><i class="fal fa-long-arrow-right" aria-hidden="true"></i>
+              </Link>
             </div>
-
           </Col>
           <Col>
             <h4>Location</h4>

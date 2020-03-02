@@ -9,7 +9,7 @@ const CallOutBanner = () => (
         <h2>Contact</h2>
         <div>
           <p>Would you like to work with me? Awesome!</p>
-          <Link className="btn" to="/contact/">Let's Talk</Link>
+          <Link className="btn btn-highlight-reverse btn-lg" to="/contact/">Let's Talk</Link>
         </div>
       </div>
     </section>
