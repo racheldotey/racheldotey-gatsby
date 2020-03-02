@@ -48,6 +48,15 @@ const Footer = ({ siteTitle }) => (
       <a title="React.js is a JavaScript library for building user interfaces." href="https://reactjs.org/" target="_blank"><LogoReactJS /></a>
       <a title="Gatsby.js is a free and open source framework based on React that helps developers build blazing fast websites and apps." href="https://gatsbyjs.org/" target="_blank"><LogoGatsbyJS /></a>
       <a title="GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data." href="https://graphql.org/" target="_blank"><LogoGraphql /></a>
+      <span>
+        theme optimized for display on&nbsp;&nbsp;
+        <span class="badge badge-secondary d-inline d-sm-none">x-small</span> 
+        <span class="badge badge-secondary d-none d-sm-inline d-md-none">small</span> 
+        <span class="badge badge-secondary d-none d-md-inline d-lg-none">medium</span> 
+        <span class="badge badge-secondary d-none d-lg-inline d-xl-none">large</span> 
+        <span class="badge badge-secondary d-none d-xl-inline">x-large</span>
+        &nbsp;&nbsp;devices
+    </span>
     </div>
     <div className="footer-copywrite">
       <Container>

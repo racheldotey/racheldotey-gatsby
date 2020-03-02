@@ -6,5 +6,6 @@ section.introduction-banner {
     -webkit-clip-path: polygon(0 0,100% 10vh,100% 100%,0 90%);
     padding: 5rem 0;
     height: 100vh;
-    max-height: 600px;
+    max-height: 700px;
+    min-height: 450px;
 }

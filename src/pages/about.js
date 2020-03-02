@@ -25,16 +25,19 @@ const AboutPage = () => (
       <Row>
         <Col>
           <h4 className="text-center">About</h4>
-          <p></p>
+          <p>Full stack developer with over 10 years of experience across a broad range of technologies.</p>
+          <p>My background includes front-end and back-end software development, project management, search engine optimization, social media marketing, and graphic design.</p>
         </Col>
         <Col className="text-center">
           <PictureProfile />          
         </Col>
         <Col>
-          <h4 className="text-center">Contact</h4>
-          <ul>
-            <li></li>
-          </ul>
+              <p className="h4">Connect with Rachel</p>
+              <p><strong className="highlight">Servicing clients in New England. Based in Burlington Vermont.</strong></p>
+              <p> </p>
+              <p>607-386-5872<br />
+                hello{"{at}"}racheldotey.com</p>
+              <p>[Facebook] [GitHub] [Twitter] [LinkedIn]</p>
         </Col>
       </Row>
       <Row>

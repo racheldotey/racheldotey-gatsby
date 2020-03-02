@@ -1,7 +1,9 @@
-span.highlight {
-    background-image: linear-gradient(135deg, #02aab0, #00cdac);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+span, strong, p, span, .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    &.highlight {
+        background-image: linear-gradient(135deg, #02aab0, #00cdac);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
 
 div.highlight {
