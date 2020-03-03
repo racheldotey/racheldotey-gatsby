@@ -39,29 +39,7 @@
                 padding: 2rem 0;
                 text-align: center;
             }
-
-            a {
-                -webkit-transition: all 0.1s ease-in-out;
-                -moz-transition: all 0.1s ease-in-out;
-                -ms-transition: all 0.1s ease-in-out;
-                -o-transition: all 0.1s ease-in-out;
-                transition: all 0.1s ease-in-out;
-            }
             
-            a {
-                color: #30a6c4;
-                &:link {
-                    color: #30a6c4;
-                }
-                
-                &:visited {
-                    color: #26839b;
-                }
-                
-                &:focus, &:hover, &:active {
-                    color: #bad844;
-                }
-            }
         }
     }
 }
