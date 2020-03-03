@@ -1,5 +1,6 @@
 section.callout-banner {
     @include gradient-background-fill;
-    padding: 15vh 0;
     font-weight: 400;
+    -webkit-clip-path: polygon(0 0,100% 10vh,100% 100%,0 90%);
+    padding: 15vh 0;
 }

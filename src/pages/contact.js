@@ -18,6 +18,7 @@ const ContactPage = () => (
       </Row>
     </Container>
     <ContactBanner/>
+    <div className="py-5"></div>
     <hr/>
   </Layout>
 )

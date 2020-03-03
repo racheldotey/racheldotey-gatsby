@@ -15,7 +15,7 @@ export default () => {
     }
   `)
 
-  return (<div className="banner-services-image">
+  return (<div className="image-framed">
       <Img style={{"max-height": "200px"}} fluid={data.placeholderImage.childImageSharp.fluid} />
     </div>)
 }

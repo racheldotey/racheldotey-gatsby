@@ -1,6 +1,6 @@
 $color-muted-dark-blue: #496869;
 $color-muted-medium-blue: #029297;
-$color-muted-light-blue: #d2dfdf;
+$color-muted-light-blue: #bed7da;
 $color-dark-blue: #016164;
 $color-medium-blue: #029297;
 $color-light-blue: #b8dedf;
@@ -23,6 +23,7 @@ $color-highlight-font: #fff;
 @import './base/typography';
 @import './base/buttons';
 @import './base/forms';
+@import './base/images';
 
 @import './components/banner-callout';
 @import './components/banner-contact';

@@ -1,0 +1,11 @@
+.image-framed {
+        text-align: center;
+        .gatsby-image-wrapper {
+            img {
+                padding: 5px;
+                border: 1px solid $color-divider-color;
+                border-radius: 5px;
+                margin: 0 auto;
+            }
+        }
+    }
