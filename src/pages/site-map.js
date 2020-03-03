@@ -23,22 +23,16 @@ const ServicesPage = () => (
         <Col>
           <h4>Pages</h4>
           <ul>
-            <li><Link to="Home">Home</Link></li>
-            <li><Link to="Home">About</Link></li>
-            <li><Link to="Home">Services</Link></li>
-            <li><Link to="Home">Contact</Link></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/services">Services</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
           </ul>
         </Col>
         <Col>
           <h4>Policies</h4>
           <ul>
-            <li><Link to="Home">Policies</Link></li>
-          </ul>
-        </Col>
-        <Col>
-          <h4>Blogs</h4>
-          <ul>
-            <li></li>
+            <li><Link to="/policies">Policies</Link></li>
           </ul>
         </Col>
       </Row>
