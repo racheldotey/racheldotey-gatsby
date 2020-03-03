@@ -13,9 +13,9 @@ const ServicesBanner = () => (
                 <Row>
                     <Col sm={12} md={6} lg={4}>
                         <div className="mb-5 mb-lg-0">
-                            <p className="h2 text-center">Responsive web design</p>
+                            <p className="h2 text-center">Responsive Web Design</p>
                             <PictureResponsive/>
-                            <p>More and more wesite visiters are browsing using their mobile devices. It has become essential for websites to function perfectly on phones and tablets.</p>
+                            <p className="mt-3">More and more wesite visiters are browsing using their mobile devices. It has become essential for websites to function perfectly on phones and tablets.</p>
                             <p>We design all websites with moble first themeing and responsive design. This ensures that your website will function as good as a downloaded store app.</p>
                             <div className="text-center">
                                 <Link to="/services">See my services</Link>
@@ -24,9 +24,9 @@ const ServicesBanner = () => (
                     </Col>
                     <Col sm={12} md={6} lg={4}>
                         <div className="mb-5 mb-lg-0">
-                            <p className="h2 text-center">Marking</p>
+                            <p className="h2 text-center">Search Engine Marking</p>
                             <PictureMarketing/>
-                            <p>I am a full stack software developer with experience making
+                            <p className="mt-3">I am a full stack software developer with experience making
                         interative web experiences.</p>
                             <p>I am interested in helping small businesses gain visibility on the internet.
                         Create strong brands and stay competitive in the market.</p>
@@ -37,9 +37,9 @@ const ServicesBanner = () => (
                     </Col>
                     <Col md={12} lg={4}>
                         <div>
-                            <p className="h2 text-center">Software development</p>
+                            <p className="h2 text-center">Software Development</p>
                             <PictureSoftware/>
-                            <p>I'm a full stack developer with experience working with dozens of languages and frameworks.</p>
+                            <p className="mt-3">I'm a full stack developer with experience working with dozens of languages and frameworks.</p>
                             <p>I am interested in helping small businesses gain visibility on the internet.
                         Create strong brands and stay competitive in the market.</p>
                             <div className="text-center">

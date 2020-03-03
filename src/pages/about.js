@@ -13,16 +13,14 @@ import Signature from "../components/images/signature-black"
 const AboutPage = () => (
   <Layout>
     <SEO title="Services" />
-    <Container>
+    <Container className="my-5">
       <Row className="justify-content-md-center">
-        <Col md={12} lg={10} className="page-intro">
+        <Col md={12} lg={10} className="text-center page-intro">
           <Signature />
           <p className="lead">Web Design, Software Development, and Search Engine Marketing</p>
         </Col>
       </Row>
-    </Container>
-    <Container>
-      <Row>
+      <Row className="pt-4">
         <Col>
           <h4 className="text-center">About</h4>
           <p>Full stack developer with over 10 years of experience across a broad range of technologies.</p>
@@ -40,7 +38,7 @@ const AboutPage = () => (
               <p>[Facebook] [GitHub] [Twitter] [LinkedIn]</p>
         </Col>
       </Row>
-      <Row>
+      <Row className="pt-4">
         <Col>
           <h4 className="text-center">Education</h4>
           <ul>
@@ -60,19 +58,18 @@ const AboutPage = () => (
           </ul>
         </Col>
       </Row>
-      <Row>
+      <Row className="pt-4">
         <Col>
           <h4>Experience</h4>
           <p></p>
         </Col>
       </Row>
-      <Row>
+      <Row className="pt-1 pb-5">
         <Col>
         <p className="lead">#UVMComputes</p>
         </Col>
       </Row>
     </Container>
-    <div className="page-end"></div>
     <CallOutBanner />
   </Layout>
 )
