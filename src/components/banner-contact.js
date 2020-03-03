@@ -12,8 +12,10 @@ const LocationColumn = () => (
         <hr/>
         <div className="py-3">
             <p className="h4">Connect with Rachel</p>
-            <p>607-386-5872<br />
-                hello{"{at}"}racheldotey.com</p>
+            <p>
+                <a title="Call me at 607-386-5872" href="tel:607-386-5872">607-386-5872</a><br />
+                <a title="Lets discuss your business!" href="mailto:hello@racheldotey.com">hello@racheldotey.com</a>
+            </p>
         </div>
         <hr/>
         <div className="pb-5">

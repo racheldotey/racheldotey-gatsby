@@ -23,8 +23,10 @@ const Header = ({ siteTitle }) => (
           <Nav className="smallview-nav-contact d-sm-none">
             <div>
               <p class="h4 highlight">Why wait, lets talk!</p>
-              <p><a title="Call me at 607-386-5872" href="tel:607-386-5872">607-386-5872</a><br />
-                <Link title="Lets discuss your business!" to="/contact">hello{'{'}at{'}'}racheldotey.com</Link></p>
+              <p>
+                <a title="Call me at 607-386-5872" href="tel:607-386-5872">607-386-5872</a><br />
+                <Link title="Lets discuss your business!" to="/contact">hello@racheldotey.com</Link>
+              </p>
             </div>
           </Nav>
         </Navbar.Collapse>

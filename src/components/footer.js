@@ -37,8 +37,10 @@ const Footer = ({ siteTitle }) => (
         <Col xs={12} sm={6} md={4}>
           <div className="text-center text-md-left">
             <h4 className="text-muted">Connect with Rachel</h4>
-            <p><a title="Call me at 607-386-5872" href="tel:607-386-5872">607-386-5872</a><br />
-              <Link title="Lets discuss your business!" to="/contact">hello@racheldotey.com</Link></p>
+              <p>
+                <a title="Call me at 607-386-5872" href="tel:607-386-5872">607-386-5872</a><br />
+                <Link title="Lets discuss your business!" to="/contact">hello@racheldotey.com</Link>
+              </p>
             <p>[Facebook] [GitHub] [Twitter] [LinkedIn]</p>
           </div>
         </Col>
