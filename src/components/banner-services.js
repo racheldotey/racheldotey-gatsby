@@ -37,8 +37,8 @@ const ServicesBanner = () => (
                         <div>
                             <p className="h2 text-center">Software Development</p>
                             <PictureSoftware />
-                            <p className="mt-3">As a full stack software developer I create custom WordPress plugins, membership areas, payment gateways, React based single page websites, fully custom web and phone apps..</p>
-                            <p>I can createanything your business needs to succeed in today's competitive online markets.</p>
+                            <p className="mt-3">As a full stack software developer I create custom WordPress plugins, membership areas, payment gateways, React based single page websites, fully custom web and phone apps.</p>
+                            <p>I can create anything your business needs to succeed in today's competitive online markets.</p>
                             <div className="text-center">
                                 <Link to="/about">Lets build something</Link>
                             </div>
