@@ -4,7 +4,7 @@ import { Form, Button } from "react-bootstrap"
 
 const ContactForm = () => (
     <Form className="contact-form">
-        <p className="h4">Email Me</p>
+        <p className="h4 text-center">Contact Me</p>
 
         <Form.Group controlId="contacFormName">
             <Form.Label>Name</Form.Label>

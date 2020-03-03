@@ -10,12 +10,14 @@ import ContactBanner from "../components/banner-contact"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <GreetingBanner />
-    <IntroductionBanner />
-    <ServicesBanner/>
-    <ContactBanner/>
-    <div className="page-end footer-divider"></div>
+    <div className="py-5">
+      <SEO title="Home" />
+      <GreetingBanner />
+      <IntroductionBanner />
+      <ServicesBanner/>
+      <ContactBanner/>
+    </div>
+    <hr/>
   </Layout>
 )
 
