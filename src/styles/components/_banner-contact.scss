@@ -1,30 +1,25 @@
 // Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) {
-    section.contact-banner {
-        form.contact-form {
-            @include gradient-background-fill;
-            padding: 2em;
-            font-weight: 400;
-        
-            .text-muted {
-                color: #bedadb !important;
-            }
+
+section.contact-banner {
+    div.smallview-contact-banner {
+        @include gradient-background-fill;
+    }
+
+    form.contact-form {        
+        .text-muted {
+            color: #bedadb !important;
         }
     }
-    
 }
+
+
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
     section.contact-banner {
         form.contact-form {
             @include gradient-background-fill;
             padding: 2em;
-            font-weight: 400;
             border-radius: 0.3rem;
-        
-            .text-muted {
-                color: #bedadb !important;
-            }
         }
     }
 }

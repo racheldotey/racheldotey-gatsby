@@ -35,12 +35,18 @@ const ContactBanner = () => (
                 </Col>
             </Row>
         </Container>
-        <div className="smallview-contact-banner d-block d-md-none">
-            <div className="smallview-contact-banner mb-5">
-                <ContactForm />
+        <div className="d-block d-md-none">
+            <div className="smallview-contact-banner py-5">
+                <Container>
+                    <Row className="justify-content-md-center">
+                        <Col>
+                            <ContactForm />
+                        </Col>
+                    </Row>
+                </Container>
             </div>
             <Container>
-                <Row className="justify-content-md-center">
+                <Row className="justify-content-md-center py-5">
                     <Col>
                         {LocationColumn()}
                     </Col>

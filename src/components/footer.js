@@ -39,6 +39,7 @@ const Footer = ({ siteTitle }) => (
             <h4 className="text-muted">Connect with Rachel</h4>
             <p><a title="Call me at 607-386-5872" href="tel:607-386-5872">607-386-5872</a><br />
               <Link title="Lets discuss your business!" to="/contact">hello@racheldotey.com</Link></p>
+            <p>[Facebook] [GitHub] [Twitter] [LinkedIn]</p>
           </div>
         </Col>
       </Row>
