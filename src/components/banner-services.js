@@ -7,7 +7,7 @@ import PictureResponsive from "./images/banner-services-responsive"
 import PictureSoftware from "./images/banner-services-software"
 
 const ServicesBanner = () => (
-    <section className="services-banner">
+    <section className="services-banner"><a href="#services"></a>
         <div className="d-flex h-100">
             <Container className="justify-content-center align-self-center">
                 <Row>
@@ -31,7 +31,7 @@ const ServicesBanner = () => (
                             <p>I am interested in helping small businesses gain visibility on the internet.
                         Create strong brands and stay competitive in the market.</p>
                             <div className="text-center">
-                                <Link to="/contact">Contact me</Link>
+                                <Link to="#contact">Contact me</Link>
                             </div>
                         </div>
                     </Col>

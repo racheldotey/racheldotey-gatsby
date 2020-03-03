@@ -24,7 +24,7 @@ const LocationColumn = () => (
 )
 
 const ContactBanner = () => (
-    <section className="contact-banner">
+    <section className="contact-banner"><a href="#contact"></a>
         <Container className="d-none d-md-block">
             <Row className="justify-content-md-center">
                 <Col sm={{ order: 1, span: 12}} md={5} lg={5} xl={5} className="text-center">

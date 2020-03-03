@@ -5,7 +5,7 @@ const ProjectsBanner = () => (
     <section class="full-banner projects-banner" id="hero">
         <div class="container">
             <h1><span class="highlight">ProjectsBanner</span>!</h1>
-            <Link to="#contact">Lets Talk</Link>
+            <Link to="#contact" className="button button-dark">Lets Talk</Link>
         </div>
     </section>
 )

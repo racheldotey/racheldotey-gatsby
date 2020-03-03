@@ -22,8 +22,8 @@ const Footer = ({ siteTitle }) => (
             <span className="highlight">your business better</span>?</h4>
 
             <div class="call-to-action">
-              <Link title="I would love to talk about your business!" to="/contact" className="btn btn-highlight btn-lg">
-                <span>Lets Talk</span><i class="fal fa-long-arrow-right" aria-hidden="true"></i>
+              <Link title="I would love to talk about your business!" to="/contact" className="button button-dark">
+                <span>Lets discuss your  ideas</span><i class="fal fa-long-arrow-right" aria-hidden="true"></i>
               </Link>
             </div>
           </div>
@@ -38,7 +38,7 @@ const Footer = ({ siteTitle }) => (
           <div className="text-center text-md-left">
             <h4 className="text-muted">Connect with Rachel</h4>
             <p><a title="Call me at 607-386-5872" href="tel:607-386-5872">607-386-5872</a><br />
-              <Link title="Lets discuss your business!" to="/contact">hello{'{'}at{'}'}racheldotey.com</Link></p>
+              <Link title="Lets discuss your business!" to="/contact">hello@racheldotey.com</Link></p>
           </div>
         </Col>
       </Row>

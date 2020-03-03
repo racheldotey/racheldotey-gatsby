@@ -30,7 +30,7 @@ const ContactForm = () => (
         </Form.Group>
 
         <div className="text-right">
-            <Button variant="highlight-reverse" type="submit" size="lg">
+            <Button className="button button-light" type="submit" size="lg">
                 Send Message
             </Button>
         </div>

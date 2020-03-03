@@ -1,11 +1,48 @@
-.btn {
-    &.btn-highlight {
-        font-weight: bold;
-        @include gradient-background-fill;
+.button {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    transition: all 0.2s;
+    font-weight: 600;
+    background-color: transparent;
+    border: 0.1em solid #FFFFFF;
+    color: #FFFFFF;
 
-        &:hover,
-        &:active {
-            color: limegreen;
+    &:hover {
+        text-decoration: none;
+        color: $color-highlight-primary !important;
+        background-color: #FFFFFF;
+    }
+
+    &.button-light {
+        border-color: #FFFFFF;
+        color: #FFFFFF;
+
+        &:hover {
+            color: $color-highlight-primary !important;
+            background-color:  #FFFFFF;
         }
+    }
+
+    &.button-dark {
+        border-color: $color-highlight-primary;
+        color: $color-highlight-primary;
+
+        &:hover {
+            color: #FFFFFF !important;
+            background-color: $color-highlight-primary;
+        }
+    }
+}
+@media all and (max-width:30em) {
+    .button {
+        display: block;
+        margin: 0.4em auto;
     }
 }
