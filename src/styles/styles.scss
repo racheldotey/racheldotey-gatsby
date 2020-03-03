@@ -1,16 +1,34 @@
+$color-muted-dark-blue: #496869;
+$color-muted-medium-blue: #029297;
+$color-muted-light-blue: #d2dfdf;
+$color-dark-blue: #016164;
+$color-medium-blue: #029297;
+$color-light-blue: #b8dedf;
+
+$color-lime-green: #bad844;
+$color-seafom-green: #00cdac;
+
+
+$color-base-font: #174f5d;
+$color-a-link-color: $color-medium-blue;//#30a6c4;
+$color-a-visited-color: $color-muted-dark-blue;
+$color-a-active-color: $color-lime-green;
+$color-divider-color: #eaecee;
+$color-highlight-primary: $color-medium-blue;
+$color-highlight-secondary: $color-seafom-green;
+$color-highlight-font: #fff;
+
+
 @import './base/mixins';
-@import './base/layout';
 @import './base/typography';
+@import './base/buttons';
+@import './base/forms';
 
 @import './components/banner-callout';
 @import './components/banner-contact';
 @import './components/banner-greetings';
 @import './components/banner-introduction';
 @import './components/banner-services';
-@import './components/buttons';
-@import './components/footer';
-@import './components/forms';
 @import './components/header';
 
 @import './pages/about';
-@import './pages/contact';

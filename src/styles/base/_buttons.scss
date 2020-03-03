@@ -1,0 +1,11 @@
+.btn {
+    &.btn-highlight {
+        font-weight: bold;
+        @include gradient-background-fill;
+
+        &:hover,
+        &:active {
+            color: limegreen;
+        }
+    }
+}

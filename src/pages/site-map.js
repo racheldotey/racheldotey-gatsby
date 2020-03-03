@@ -18,7 +18,7 @@ const ServicesPage = () => (
         </Col>
       </Row>
       <Row className="pb-5">
-        <Col xs={12} sm={6} lg={3} className="pt-4">
+        <Col xs={12} sm={6} lg={3} className="pt-4 text-center text-sm-left">
           <h4>Pages</h4>
           <ul className="list-unstyled">
             <li><Link to="/">Home</Link></li>
@@ -27,19 +27,19 @@ const ServicesPage = () => (
             <li><Link to="/contact">Contact</Link></li>
           </ul>
         </Col>
-        <Col xs={12} sm={6} lg={3} className="pt-4">
+        <Col xs={12} sm={6} lg={3} className="pt-4 text-center text-sm-left">
           <h4>Blogs</h4>
           <ul className="list-unstyled">
             <li>Comming soon!</li>
           </ul>
         </Col>
-        <Col xs={12} sm={6} lg={3} className="pt-4">
+        <Col xs={12} sm={6} lg={3} className="pt-4 text-center text-sm-left">
           <h4>Policies</h4>
           <ul className="list-unstyled">
             <li><Link to="/policies">Policies</Link></li>
           </ul>
         </Col>
-        <Col xs={12} sm={6} lg={3} className="pt-4">
+        <Col xs={12} sm={6} lg={3} className="pt-4 text-center text-sm-left">
           <h4>System Pages</h4>
           <ul className="list-unstyled">
             <li><Link to="/404">404 Page Not Found</Link></li>

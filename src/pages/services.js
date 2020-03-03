@@ -23,7 +23,7 @@ const ServicesPage = () => (
         </Col>
       </Row>
       <Row>
-        <Col xs={12} sm={6} md={4}>
+        <Col sm={12} md={6} lg={4} className="pb-4">
           <h4>Web Design and Development</h4>
           <ul>
             <li>Mobile first responsive web design</li>
@@ -35,7 +35,7 @@ const ServicesPage = () => (
             <li>ADA Standards for Accessible Design and 508 Compliance</li>
           </ul>
         </Col>
-        <Col xs={12} sm={6} md={4}>
+        <Col sm={12} md={6} lg={4} className="pb-4">
           <h4>Marketing</h4>
           <ul>
             <li>Local business search engine targeting campaigns</li>
@@ -48,7 +48,7 @@ const ServicesPage = () => (
             <li>Social media marketing and management</li>
           </ul>
         </Col>
-        <Col sm={12} md={4}>
+        <Col md={12} lg={4} className="pb-4">
           <h4>Software Programming</h4>
           <ul>
             <li>App development</li>
@@ -60,7 +60,7 @@ const ServicesPage = () => (
           </ul>
         </Col>
       </Row>
-      <Row className="pt-4">
+      <Row>
         <Col>
         <p className="lead">Are you looking for a software development service that isn't listed? I am a full stack developer with a wide range of experience. Tell us about your project, get a quick estimate and a plan for making it live.</p>
         </Col>

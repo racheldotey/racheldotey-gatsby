@@ -1,15 +1,18 @@
 .navbar {
+    color: $color-base-font;
     background-color: #ffffff;
-    border-bottom: 1px solid #eaecee;
+    border-bottom: 1px solid $color-divider-color;
 
     .navbar-brand {
         .title {
+            color: $color-base-font;
             display: block;
             font-size: 1.5rem;
             line-height: 1.5rem;
             font-weight: bold;
         }
         .tagline {
+            color: $color-base-font;
             display: block;
             font-size: 1rem;
             line-height: 1.5rem;
@@ -38,17 +41,25 @@
             }
 
             a {
-                color: #02aab0;
+                -webkit-transition: all 0.1s ease-in-out;
+                -moz-transition: all 0.1s ease-in-out;
+                -ms-transition: all 0.1s ease-in-out;
+                -o-transition: all 0.1s ease-in-out;
+                transition: all 0.1s ease-in-out;
+            }
+            
+            a {
+                color: #30a6c4;
                 &:link {
-                    color: #02aab0;
+                    color: #30a6c4;
                 }
                 
                 &:visited {
-                    color: #007a7e;
+                    color: #26839b;
                 }
                 
                 &:focus, &:hover, &:active {
-                    color: #00cdac;
+                    color: #bad844;
                 }
             }
         }

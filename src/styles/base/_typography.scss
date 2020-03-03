@@ -1,6 +1,6 @@
 body {
     font-family: 'Open-Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    color: #333333;
+    color: $color-base-font;
 }
 
 a, button, input:focus, input[type="button"], input[type="reset"], input[type="submit"], textarea:focus, .button {
@@ -12,17 +12,17 @@ a, button, input:focus, input[type="button"], input[type="reset"], input[type="s
 }
 
 a {
-    color: #30a6c4;
+    color: $color-a-link-color;
     &:link {
-        color: #30a6c4;
+        color: $color-a-link-color;
     }
     
     &:visited {
-        color: #26839b;
+        color: $color-a-visited-color;
     }
     
     &:focus, &:hover, &:active {
-        color: #bad844;
+        color: $color-a-active-color;
     }
 }
 
@@ -31,6 +31,17 @@ a {
     font-weight: 600;
 }
 
+span, strong, p, span, .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    &.highlight {
+        @include gradient-text-fill;
+    }
+}
+
+div.highlight {
+    @include gradient-background-fill;
+
+}
+
 hr {
-    border-top: 1px solid #eaecee;
+    border-top: 1px solid $color-divider-color;
 }
