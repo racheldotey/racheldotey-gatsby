@@ -1,0 +1,5 @@
+.built-with-logos img {
+    @include grey-image-color-on-hover;
+    @include image-wiggle;
+    cursor: pointer;
+}

@@ -47,7 +47,7 @@ const Footer = ({ siteTitle }) => (
     <hr />
     <Container className="my-5">
       <Row>
-        <Col className="text-center">
+        <Col className="built-with-logos text-center">
           <small className="text-muted">this website was built with</small><br />
           <a title="HTML5 is the latest evolution of the standard that defines HTML." href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank"><LogoHTML5 /></a>
           <a title="CSS3 is the latest evolution of the Cascading Style Sheets language." href="https://developer.mozilla.org/en-US/docs/Archive/CSS3" target="_blank"><LogoCSS3 /></a>
