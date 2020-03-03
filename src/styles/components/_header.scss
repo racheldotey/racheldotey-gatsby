@@ -15,4 +15,22 @@
             line-height: 1.5rem;
         }
     }
+    
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .navbar {
+        .nav-main-menu {
+            text-align: right;
+            font-size: 2.5rem;
+            font-family: 'Crimson Text';
+            font-weight: 600;
+        }
+
+        .smallview-nav-contact {
+            padding: 3rem 0 2rem;
+            text-align: center;
+        }
+    }
 }

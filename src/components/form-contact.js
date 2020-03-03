@@ -4,6 +4,8 @@ import { Form, Button } from "react-bootstrap"
 
 const ContactForm = () => (
     <Form className="contact-form">
+        <p className="h4">Email Me</p>
+
         <Form.Group controlId="contacFormName">
             <Form.Label>Name</Form.Label>
             <Form.Control type="text" placeholder="Enter your Name" />
@@ -23,16 +25,15 @@ const ContactForm = () => (
         </Form.Group>
 
         <Form.Group controlId="contacFormMessage">
-            <Form.Label>Message</Form.Label>
+            <Form.Label>How can I help?</Form.Label>
             <Form.Control as="textarea" rows="3" />
         </Form.Group>
 
         <div className="text-right">
             <Button variant="highlight-reverse" type="submit" size="lg">
-                Submit
+                Send Message
             </Button>
         </div>
-
     </Form>
 )
 

@@ -13,12 +13,18 @@ const Header = ({ siteTitle }) => (
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="mr-auto">
+          <Nav className="mr-auto"></Nav>
+          <Nav className="nav-main-menu">
+            <Nav.Link to="/about">About</Nav.Link>
+            <Nav.Link eventKey={2} to="/services">Services</Nav.Link>
+            <Nav.Link eventKey={3} to="/contact">Contact</Nav.Link>
           </Nav>
-          <Nav>
-            <Nav.Link href="/about">About</Nav.Link>
-            <Nav.Link eventKey={2} href="/services">Services</Nav.Link>
-            <Nav.Link eventKey={3} href="/contact">Contact</Nav.Link>
+          <Nav className="smallview-nav-contact d-sm-none">
+            <div>
+              <p class="h4 highlight">Connect with Rachel</p>
+              <p>607-386-5872<br />
+                hello{"{at}"}racheldotey.com</p>
+            </div>
           </Nav>
         </Navbar.Collapse>
       </div>
