@@ -87,16 +87,7 @@ const ServicesPage = () => (
     <Container className="my-5">
       <Row>
         <Col>
-          <p className="lead">Are you looking for a software development service that isn't listed? I am a full stack developer with a wide range of experience. Tell us about your project, get a quick estimate and a plan for making it live.</p>
-        </Col>
-      </Row>
-      <Row className="pt-4 pb-5">
-        <Col>
-          "I'm not sure which service my business needs..."
-          Contact Us to discuss your project and business goals.
-          We'll recommend a solution tailored to your specific requirements.
-
-          Tell us about your project, get a quick estimate and a plan for making it live.
+          <p className="lead">Are you looking for a software development service that isn't listed? I am a full stack developer with a wide range of experience. Tell me about your project, get a quick estimate and a plan for making it live.</p>
         </Col>
       </Row>
     </Container>
