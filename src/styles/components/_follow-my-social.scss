@@ -1,0 +1,4 @@
+.follow-my-social img {
+    @include image-move-up;
+    cursor: pointer;
+}

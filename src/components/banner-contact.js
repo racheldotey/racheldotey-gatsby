@@ -2,6 +2,7 @@ import React from "react"
 
 import { Container, Row, Col } from "react-bootstrap"
 import ContactForm from "../components/form-contact"
+import SocialButtons from "../components/images/follow-my-social"
 
 const LocationColumn = () => (
     <div className="text-center">
@@ -20,7 +21,7 @@ const LocationColumn = () => (
         <hr/>
         <div className="pb-5">
             <p className="h4">Follow Me At</p>
-            <p>[Facebook] [GitHub] [Twitter] [LinkedIn]</p>
+            <SocialButtons />
         </div>
     </div>
 )

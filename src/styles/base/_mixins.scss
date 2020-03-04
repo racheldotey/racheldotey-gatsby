@@ -54,3 +54,13 @@
     80% { transform: translate(0, 2px); }
     100% { transform: translate(0, 0); }
   }
+
+  @mixin image-move-up {
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -o-transition: margin 0.5s ease-out;
+
+      &:hover {
+        margin-top: 2px;
+      }
+  }

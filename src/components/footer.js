@@ -6,6 +6,7 @@ import { Container, Row, Col } from "react-bootstrap"
 
 import BuiltWithLogos from "./images/built-with-logos"
 import Signature from "./images/signature-black"
+import SocialButtons from "./images/follow-my-social"
 
 const Footer = ({ siteTitle }) => (
   <footer class="footer">
@@ -36,7 +37,7 @@ const Footer = ({ siteTitle }) => (
                 <a title="Call me at 607-386-5872" href="tel:607-386-5872">607-386-5872</a><br />
                 <Link title="Lets discuss your business!" to="/contact">hello@racheldotey.com</Link>
               </p>
-            <p>[Facebook] [GitHub] [Twitter] [LinkedIn]</p>
+            <SocialButtons />
           </div>
         </Col>
       </Row>
