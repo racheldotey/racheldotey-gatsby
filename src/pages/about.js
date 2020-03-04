@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import CallOutBanner from "../components/banner-callout"
 
-import PictureProfile from "../components/images/picture-profle"
+import ProfilePicture from "../components/images/profle-picture"
 import Signature from "../components/images/signature-black"
 
 //https://www.canva.com/templates/EADaoa2YgA8-pink-blue-design-resume/
@@ -27,7 +27,7 @@ const AboutPage = () => (
           <p>My background includes front-end and back-end software development, project management, search engine optimization, social media marketing, and graphic design.</p>
         </Col>
         <Col className="text-center">
-          <PictureProfile />          
+          <ProfilePicture />          
         </Col>
         <Col>
               <p className="h4">Connect with Rachel</p>

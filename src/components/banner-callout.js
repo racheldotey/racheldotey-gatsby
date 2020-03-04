@@ -1,10 +1,22 @@
-import { Link } from "gatsby"
 import React from "react"
+import { useStaticQuery, graphql, Link } from "gatsby"
+import Img from "gatsby-image"
+import { Container, Row, Col } from "react-bootstrap"
 
-import PictureCallout from "./images/picture-callout"
-import { Container, Row, Col  } from "react-bootstrap"
+const CallOutBanner = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      imageSign: file(relativePath: { eq: "stock-this-is-the-sign.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 512, maxHeight: 512) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+    }
+  `)
 
-const CallOutBanner = () => (
+  return (
     <section class="callout-banner">
       <Container>
         <Row>
@@ -17,11 +29,14 @@ const CallOutBanner = () => (
             </div>
           </Col>
           <Col>
-            <PictureCallout />
+            <div className="profile-image">
+              <Img style={{ "max-height": "340px", "max-width": "340px" }} fluid={data.imageSign.childImageSharp.fluid} />
+            </div>
           </Col>
         </Row>
       </Container>
     </section>
-)
+  )
+}
 
 export default CallOutBanner

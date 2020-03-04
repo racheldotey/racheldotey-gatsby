@@ -3,13 +3,8 @@ import PropTypes from "prop-types"
 import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
 
-import LogoCSS3 from "./images/logo-css3"
-import LogoGatsbyJS from "./images/logo-gatsbyjs"
-import LogoGraphql from "./images/logo-graphql"
-import LogoHTML5 from "./images/logo-html5"
-import LogoNodeJS from "./images/logo-nodejs"
-import LogoReactJS from "./images/logo-reactjs"
-import LogoSASS from "./images/logo-sass"
+
+import BuiltWithLogos from "./images/built-with-logos"
 import Signature from "./images/signature-black"
 
 const Footer = ({ siteTitle }) => (
@@ -51,15 +46,7 @@ const Footer = ({ siteTitle }) => (
       <Row>
         <Col className="built-with-logos text-center">
           <small className="text-muted">this website was built with</small><br />
-          <a title="HTML5 is the latest evolution of the standard that defines HTML." href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank"><LogoHTML5 /></a>
-          <a title="CSS3 is the latest evolution of the Cascading Style Sheets language." href="https://developer.mozilla.org/en-US/docs/Archive/CSS3" target="_blank"><LogoCSS3 /></a>
-          <a title="Sass is the most mature, stable, and powerful professional grade CSS extension language in the world." href="https://sass-lang.com/" target="_blank"><LogoSASS /></a>
-          <br className="d-block d-sm-none" />
-          <a title="Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine." href="https://nodejs.org/" target="_blank"><LogoNodeJS /></a>
-          <a title="React.js is a JavaScript library for building user interfaces." href="https://reactjs.org/" target="_blank"><LogoReactJS /></a>
-          <a title="Gatsby.js is a free and open source framework based on React that helps developers build blazing fast websites and apps." href="https://gatsbyjs.org/" target="_blank"><LogoGatsbyJS /></a>
-          <a title="GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data." href="https://graphql.org/" target="_blank"><LogoGraphql /></a>
-          <br />
+          <BuiltWithLogos/><br />
           <small className="text-muted">optimized for display on a</small>
           <span>&nbsp;&nbsp;</span>
           <span class="badge badge-secondary d-inline d-sm-none">x-small</span>
