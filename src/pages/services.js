@@ -118,7 +118,7 @@ const ServicesPage = () => {
       <Container className="my-5">
         <Row>
           <Col>
-            <p className="lead">Are you looking for a service that isn't listed? I'm a full stack software development  with over a decade of experience in a wide range of experience. <Link to="/contact">Contact me</Link> and we can talk about your project and see if its something I can provide, or if I can help you find another way to bring your idea to life. I look forward to speaking with you.</p>
+            <p className="lead text-center">Are you looking for a service that isn't listed? I'm a full stack software development  with over a decade of experience in a wide range of experience. <Link to="/contact">Contact me</Link> and we can talk about your project and see if its something I can provide, or if I can help you find another way to bring your idea to life. I look forward to speaking with you.</p>
           </Col>
         </Row>
       </Container>
