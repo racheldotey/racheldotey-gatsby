@@ -40,7 +40,7 @@ const ServicesPage = () => {
       <Container className="my-5">
         <Row className="justify-content-md-center">
           <Col md={12} lg={10} className="text-center page-intro">
-            <h1 className="title">I can do a lot with software, so what can I do to best improve your customer experience?</h1>
+            <h1 className="title">I can do a lot with software, so what can I do to improve your customer experience?</h1>
             <p className="lead">I work with small businesses to create an online brand through web design an marketing. Would a website redesign improve your image with customers? Do you have an application or software idea?<br />
               Contact me below and lets talk about what we can build together.</p>
           </Col>
@@ -52,12 +52,12 @@ const ServicesPage = () => {
           <Col>
 
             <Card>
-              <Card.Body>
+              <Card.Body className="px-0 px-sm-1 px-md-2 px-lg-3">
 
-                <Container className="mt-3 mb-1">
+                <Container>
                   <Row>
                     <Col>
-                      <h3 className="text-center mb-2">Services</h3>
+                      <h2 className="text-center highlight mt-2 mb-3">Services</h2>
                     </Col>
                   </Row>
                   <Row>
@@ -66,7 +66,7 @@ const ServicesPage = () => {
                       <div className="image-framed">
                         <Img fluid={data.imageResponsivePhone.childImageSharp.fluid} />
                       </div>
-                      <ul className="mt-3">
+                      <ul className="list-muted mt-3">
                         <li>Mobile first web design</li>
                         <li>WordPress themes and plugins</li>
                         <li>Membership websites</li>
@@ -81,7 +81,7 @@ const ServicesPage = () => {
                       <div className="image-framed">
                         <Img fluid={data.imageAnalytics.childImageSharp.fluid} />
                       </div>
-                      <ul className="mt-3">
+                      <ul className="list-muted mt-3">
                         <li>Local business user targeting strategy</li>
                         <li>Google and Facebook paid ads</li>
                         <li>Social media marketing</li>
@@ -95,7 +95,7 @@ const ServicesPage = () => {
                       <div className="image-framed">
                         <Img fluid={data.imageMonitorCode.childImageSharp.fluid} />
                       </div>
-                      <ul className="mt-3">
+                      <ul className="list-muted mt-3">
                         <li>Full stack software development</li>
                         <li>Angular.js and React.js website development</li>
                         <li>App development</li>
@@ -118,7 +118,7 @@ const ServicesPage = () => {
       <Container className="my-5">
         <Row>
           <Col>
-            <p className="lead">Are you looking for a software development service that isn't listed? I am a full stack developer with a wide range of experience. Tell me about your project, get a quick estimate and a plan for making it live.</p>
+            <p className="lead">Are you looking for a service that isn't listed? I'm a full stack software development  with over a decade of experience in a wide range of experience. <Link to="/contact">Contact me</Link> and we can talk about your project and see if its something I can provide, or if I can help you find another way to bring your idea to life. I look forward to speaking with you.</p>
           </Col>
         </Row>
       </Container>
