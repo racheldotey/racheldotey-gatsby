@@ -19,7 +19,7 @@ const LocationColumn = () => (
             </p>
         </div>
         <hr/>
-        <div className="pb-5">
+        <div>
             <p className="h4">Follow Me At</p>
             <SocialButtons />
         </div>

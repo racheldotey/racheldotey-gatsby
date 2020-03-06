@@ -11,7 +11,7 @@ import ContactBanner from "../components/banner-contact"
 
 const IndexPage = () => (
   <Layout>
-    <div className="py-5">
+    <div className="pb-5">
       <SEO title="Home" />
       <GreetingBanner />
       <IntroductionBanner />
