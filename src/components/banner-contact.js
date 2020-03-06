@@ -7,8 +7,8 @@ import SocialButtons from "../components/images/follow-my-social"
 const LocationColumn = () => (
     <div className="text-center">
         <div>
-            <p className="h4">Location</p>
-            <p>Working with small businesses across New England. Based in beautiful Burlington Vermont.</p>
+            <p className="h4">Follow Me At</p>
+            <SocialButtons />
         </div>
         <hr/>
         <div className="py-3">
@@ -20,8 +20,9 @@ const LocationColumn = () => (
         </div>
         <hr/>
         <div>
-            <p className="h4">Follow Me At</p>
-            <SocialButtons />
+            <p className="h4">Location</p>
+            <p>Working with clients across New England.<br />
+            Based in Burlington Vermont.</p>
         </div>
     </div>
 )

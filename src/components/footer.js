@@ -56,7 +56,7 @@ const Footer = ({ siteTitle }) => (
           <span class="badge badge-secondary d-none d-lg-inline d-xl-none">large</span>
           <span class="badge badge-secondary d-none d-xl-inline">x-large</span>
           <span>&nbsp;&nbsp;</span>
-          <small className="text-muted">device</small>
+          <small className="text-muted">screen</small>
         </Col>
       </Row>
     </Container>

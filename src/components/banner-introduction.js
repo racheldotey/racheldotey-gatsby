@@ -26,8 +26,8 @@ const IntroductionBanner = () => {
                         </div>
                     </Col>
                     <Col sm={12} md={8} lg={6}>
-                        <span className="h2">It's great to meet you!</span>
-                        <p className="lead">I'm a software developer with experience building interactive user experiences and .</p>
+                        <span className="h2">It's great to have you visit!</span>
+                        <p className="lead">I'm a software developer with experience designing and developing interactive web applications.</p>
                         <p className="lead">I am interested in helping small businesses gain visibility on the internet.
                 Create strong brands and stay competitive in the market.</p>
                         <div className="text-center">
