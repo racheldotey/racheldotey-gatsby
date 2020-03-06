@@ -31,7 +31,7 @@ const IntroductionBanner = () => {
                         <p className="lead">I am interested in helping small businesses gain visibility on the internet.
                 Create strong brands and stay competitive in the market.</p>
                         <div className="text-center">
-                            <Link to="#services" className="button button-light">Look at what I do</Link>
+                            <Link to="/services" className="button button-light">Look at what I do</Link>
                         </div>
                     </Col>
                 </Row>
