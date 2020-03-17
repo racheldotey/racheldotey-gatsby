@@ -27,6 +27,8 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/favicon.png`,
       },
+    },
+    {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
         fonts: [
