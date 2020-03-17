@@ -15,56 +15,56 @@ export const fluidImage = graphql`
 export default () => {
   const data = useStaticQuery(graphql`
     query {
-      logoCSS: file(relativePath: { eq: "logo_css3_256.png" }) {
+      logoCSS: file(relativePath: { eq: "icon_dev_css3.png" }) {
         childImageSharp {
           fixed(width: 56) {
             ...GatsbyImageSharpFixed
           }
         }
       }
-      logoGatsbyJS: file(relativePath: { eq: "logo_gatsbyjs_256.png" }) {
+      logoGatsbyJS: file(relativePath: { eq: "icon_dev_gatsbyjs.png" }) {
         childImageSharp {
           fixed(width: 56) {
             ...GatsbyImageSharpFixed
           }
         }
       }
-      logoGraphql: file(relativePath: { eq: "logo_graphql_256.png" }) {
+      logoGraphql: file(relativePath: { eq: "icon_dev_graphql.png" }) {
         childImageSharp {
           fixed(width: 56) {
             ...GatsbyImageSharpFixed
           }
         }
       }
-      logoHTML: file(relativePath: { eq: "logo_html5_256.png" }) {
+      logoHTML: file(relativePath: { eq: "icon_dev_html5.png" }) {
         childImageSharp {
           fixed(width: 56) {
             ...GatsbyImageSharpFixed
           }
         }
       }
-      logoNetlify: file(relativePath: { eq: "logo_netlify_500.png" }) {
+      logoNetlify: file(relativePath: { eq: "icon_dev_netlify_500.png" }) {
         childImageSharp {
           fixed(width: 56) {
             ...GatsbyImageSharpFixed
           }
         }
       }
-      logoNodeJS: file(relativePath: { eq: "logo_nodejs_256.png" }) {
+      logoNodeJS: file(relativePath: { eq: "icon_dev_nodejs.png" }) {
         childImageSharp {
           fixed(width: 56) {
             ...GatsbyImageSharpFixed
           }
         }
       }
-      logoReactJS: file(relativePath: { eq: "logo_reactjs_256.png" }) {
+      logoReactJS: file(relativePath: { eq: "icon_dev_reactjs.png" }) {
         childImageSharp {
           fixed(width: 56) {
             ...GatsbyImageSharpFixed
           }
         }
       }
-      logoSASS: file(relativePath: { eq: "logo_sass_256.png" }) {
+      logoSASS: file(relativePath: { eq: "icon_dev_sass.png" }) {
         childImageSharp {
           fixed(width: 56) {
             ...GatsbyImageSharpFixed

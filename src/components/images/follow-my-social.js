@@ -15,35 +15,35 @@ export const fluidImage = graphql`
 export default () => {
   const data = useStaticQuery(graphql`
     query {
-      iconFacebook: file(relativePath: { eq: "icon-social-facebook-square.png" }) {
+      iconFacebook: file(relativePath: { eq: "icon_social_facebook.png" }) {
         childImageSharp {
           fixed(width: 32, height: 32) {
             ...GatsbyImageSharpFixed
           }
         }
       }
-      iconInstagram: file(relativePath: { eq: "icon-social-instagram-square.png" }) {
+      iconInstagram: file(relativePath: { eq: "icon_social_instagram.png" }) {
         childImageSharp {
           fixed(width: 32, height: 32) {
             ...GatsbyImageSharpFixed
           }
         }
       }
-      iconTwitter: file(relativePath: { eq: "icon-social-twitter-square.png" }) {
+      iconTwitter: file(relativePath: { eq: "icon_social_twitter.png" }) {
         childImageSharp {
           fixed(width: 32, height: 32) {
             ...GatsbyImageSharpFixed
           }
         }
       }
-      iconGithub: file(relativePath: { eq: "icon-social-github-square.png" }) {
+      iconGithub: file(relativePath: { eq: "icon_social_github.png" }) {
         childImageSharp {
           fixed(width: 32, height: 32) {
             ...GatsbyImageSharpFixed
           }
         }
       }
-      iconLinkedIn: file(relativePath: { eq: "icon-social-linkedin-square.png" }) {
+      iconLinkedIn: file(relativePath: { eq: "icon_social_linkedin.png" }) {
         childImageSharp {
           fixed(width: 32, height: 32) {
             ...GatsbyImageSharpFixed
