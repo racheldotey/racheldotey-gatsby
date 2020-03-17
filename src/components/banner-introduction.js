@@ -25,7 +25,7 @@ const IntroductionBanner = () => {
                             <Img style={{ "max-height": "340px", "max-width": "340px" }} fluid={data.imageLaptop.childImageSharp.fluid} />
                         </div>
                     </Col>
-                    <Col sm={12} md={8} lg={6}>
+                    <Col sm={12} md={8} lg={6} className="pt-3">
                         <span className="h2">It's great to have you visit!</span>
                         <p className="lead">I'm a software developer with experience designing and developing interactive web applications.</p>
                         <p className="lead">I am interested in helping small businesses gain visibility on the internet.
