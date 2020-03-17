@@ -21,7 +21,7 @@ const NotFoundPage = () => {
 
   return (
     <Layout>
-      <SEO title="404: Not found" />
+      <SEO title="404 Not found" />
       <Container className="my-5">
         <Row>
           <Col sm={12} md={5} lg={4} className="pb-3 text-center">

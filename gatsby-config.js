@@ -1,8 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: `Rachel Dotey`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    author: "Rachel Dotey",
+    title: "Websites and Software by Rachel Dotey",
+    titleTemplate: "%s | Websites and Software by Rachel Dotey",
+    description:
+      "Software development, interactive websites and local search engine marketing.",
+    url: "https://racheldotey.com",   // No trailing slash
+    image: "/images/snape.jpg",       // Path to your image you placed in the 'static' folder
+    twitterUsername: "@RaeDeveloper",
   },
   plugins: [
     `gatsby-plugin-sass`,
