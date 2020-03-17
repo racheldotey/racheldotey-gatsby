@@ -55,7 +55,7 @@ export default () => {
 
   return (
     <div className="follow-my-social">
-      <a title="View my Instagram" href="https://instagram.com/" target="_blank" className="pr-2">
+      <a title="View my Instagram" href="https://instagram.com/dancingrabbit/" target="_blank" className="pr-2">
         <Img fixed={data.iconInstagram.childImageSharp.fixed} />
       </a>
       <a title="Follow me on Twitter" href="https://twitter.com/RaeDeveloper" target="_blank" className="pr-2">
