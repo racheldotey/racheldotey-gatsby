@@ -3,7 +3,7 @@ import React from "react"
 import { Form, Button } from "react-bootstrap"
 
 const ContactForm = () => (
-    <Form className="contact-form" method="POST" data-netlify="true">
+    <Form className="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="sugar" data-netlify-recaptcha="true">
         <p className="h2 text-center">Contact Me</p>
 
         <Form.Group controlId="contacFormName">
@@ -28,6 +28,12 @@ const ContactForm = () => (
             <Form.Label>How can I help?</Form.Label>
             <Form.Control as="textarea" rows="3" />
         </Form.Group>
+
+        <div className="d-none">
+            <input name="sugar" />
+        </div>
+
+        <div data-netlify-recaptcha="true"></div>
 
         <div className="text-right">
             <Button className="button button-light" type="submit" size="lg">
