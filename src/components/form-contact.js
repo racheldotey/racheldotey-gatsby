@@ -3,7 +3,7 @@ import React from "react"
 import { Form, Button } from "react-bootstrap"
 
 const ContactForm = () => (
-    <Form className="contact-form">
+    <Form className="contact-form" netlify>
         <p className="h2 text-center">Contact Me</p>
 
         <Form.Group controlId="contacFormName">
