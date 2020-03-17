@@ -43,6 +43,13 @@ export default () => {
           }
         }
       }
+      logoNetlify: file(relativePath: { eq: "logo_netlify_500.png" }) {
+        childImageSharp {
+          fixed(width: 56) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
       logoNodeJS: file(relativePath: { eq: "logo_nodejs_256.png" }) {
         childImageSharp {
           fixed(width: 56) {
@@ -90,6 +97,9 @@ export default () => {
       </a>
       <a title="GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data." href="https://graphql.org/" target="_blank">
         <Img fixed={data.logoGraphql.childImageSharp.fixed} />
+      </a>
+      <a title="This bad mama jama website is hosted on Netlify" href="https://www.netlify.com/" target="_blank">
+        <Img fixed={data.logoNetlify.childImageSharp.fixed} />
       </a>
     </>
   )
