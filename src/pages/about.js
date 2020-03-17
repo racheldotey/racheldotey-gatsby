@@ -8,6 +8,7 @@ import CallOutBanner from "../components/banner-callout"
 
 import ProfilePicture from "../components/images/profle-picture"
 import Signature from "../components/images/signature-black"
+import SocialButtons from "../components/images/follow-my-social"
 
 //https://www.canva.com/templates/EADaoa2YgA8-pink-blue-design-resume/
 const AboutPage = () => (
@@ -21,52 +22,18 @@ const AboutPage = () => (
         </Col>
       </Row>
       <Row className="pt-4">
-        <Col>
-          <h4 className="text-center">About</h4>
-          <p>Full stack developer with over 10 years of experience across a broad range of technologies.</p>
-          <p>My background includes front-end and back-end software development, project management, search engine optimization, social media marketing, and graphic design.</p>
+        <Col sm={12} md={6}>
+          <p>I am a full stack developer with over 10 years of experience across a broad range of technologies.</p>
+          <p>My background includes front-end and back-end software development, project management, search engine optimization,and  marketing.</p>
+          <p>I love working with fun things like React and WordPress, and I actually know quite a few languages and frameworks. I like to use the best tool for the job to get the best results.</p>
         </Col>
-        <Col className="text-center">
-          <ProfilePicture />          
-        </Col>
-        <Col>
-              <p className="h4">Connect with Rachel</p>
-              <p><strong className="highlight">Servicing clients in New England. Based in Burlington Vermont.</strong></p>
-              <p> </p>
-              <p>607-386-5872<br />
-                hello{"{at}"}racheldotey.com</p>
-              <p>[Facebook] [GitHub] [Twitter] [LinkedIn]</p>
-        </Col>
-      </Row>
-      <Row className="pt-4">
-        <Col>
-          <h4 className="text-center">Education</h4>
-          <ul>
-            <li></li>
-          </ul>
-        </Col>
-        <Col>
-          <h4 className="text-center">Skills</h4>
-          <ul>
-            <li></li>
-          </ul>
-        </Col>
-        <Col>
-          <h4 className="text-center">Expertise</h4>
-          <ul>
-            <li></li>
-          </ul>
-        </Col>
-      </Row>
-      <Row className="pt-4">
-        <Col>
-          <h4>Experience</h4>
-          <p></p>
-        </Col>
-      </Row>
-      <Row className="pt-1 pb-5">
-        <Col>
-        <p className="lead">#UVMComputes</p>
+        <Col sm={12} md={6} className="text-center">
+              <ProfilePicture />
+              <p>
+                <a title="Call me at 607-386-5872" href="tel:607-386-5872">607-386-5872</a><br />
+                <Link title="Lets discuss your business!" to="/contact">hello@racheldotey.com</Link>
+              </p>
+            <SocialButtons />
         </Col>
       </Row>
     </Container>
