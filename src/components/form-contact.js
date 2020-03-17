@@ -3,42 +3,42 @@ import React from "react"
 import { Form, Button } from "react-bootstrap"
 
 const ContactForm = () => (
-    <Form className="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="sugar">
+    <form className="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="sugar">
+
+        <input type="hidden" name="sugar" />
+        <input type="hidden" name="form-name" value="contact" />
+        
         <p className="h2 text-center">Contact Me</p>
 
-        <Form.Group controlId="contacFormName">
-            <Form.Label>Name</Form.Label>
-            <Form.Control type="text" placeholder="Enter your Name" />
-        </Form.Group>
+        <div className="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" className="form-control" placeholder="Enter your Name" />
+        </div>
 
-        <Form.Group controlId="contacFormEmail">
-            <Form.Label>Email address</Form.Label>
-            <Form.Control type="email" placeholder="Your best email" />
-            <Form.Text className="text-muted">
+        <div className="form-group">
+            <label for="email">Email address</label>
+            <input type="email" id="email" className="form-control" placeholder="Your best email" />
+            <small id="weNeverShareYourEmail" className="form-text text-muted">
                 We'll never share your email with anyone else.
-            </Form.Text>
-        </Form.Group>
-
-        <Form.Group controlId="contacFormPhone">
-            <Form.Label>Phone</Form.Label>
-            <Form.Control type="text" placeholder="Phone number" />
-        </Form.Group>
-
-        <Form.Group controlId="contacFormMessage">
-            <Form.Label>How can I help?</Form.Label>
-            <Form.Control as="textarea" rows="3" />
-        </Form.Group>
-
-        <div className="d-none">
-            <input name="sugar" />
+            </small>
+        </div>
+        
+        <div className="form-group">
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" className="form-control" placeholder="Phone number" />
+        </div>
+        
+        <div className="form-group">
+            <label for="message">How can I help?</label>
+            <textarea id="message" rows="3" className="form-control" placeholder="What can I do for you?"></textarea>
         </div>
 
         <div className="text-right">
-            <Button className="button button-light" type="submit" size="lg">
+            <button type="submit" class="btn-lg button button-light">
                 Send Message
-            </Button>
+            </button>
         </div>
-    </Form>
+    </form>
 )
 
 export default ContactForm
