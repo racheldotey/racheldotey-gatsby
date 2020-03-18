@@ -35,7 +35,7 @@ function SEO({ description, lang, meta, keywords, title, social }) {
     `
   )
 
-  const currentUrl =  JSON.stringify(Location)
+  const currentUrl = typeof window !== 'undefined' ? window.location.href : '';
   const metaDescription = description || site.siteMetadata.description
   const metaKeywords = keywords || site.siteMetadata.keywords
   const socialTitle = social || site.siteMetadata.titleTemplate.replace(/%s/, title)
