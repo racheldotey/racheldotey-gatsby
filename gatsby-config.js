@@ -7,7 +7,7 @@ module.exports = {
     keywords: "Vermont, Burlington, Web design, Web development, Marketing, Social Media, Software development, Programming, Full stack software developer",
     url: "https://racheldotey.com",   // No trailing slash
     image: {
-      url: "/images/rachel-dotey-web-and-software-developer.jpg", // Path to your image you placed in the 'static' folder
+      url: "https://racheldotey.com/images/rachel-dotey-web-and-software-developer.jpg", // Path to your image you placed in the 'static' folder
       width: 1750,
       height: 1312,
       alt: "Internet Wizardry Through Websites and Software by Rachel Dotey",
