@@ -21,7 +21,11 @@ function SEO({ description, lang, meta, title }) {
             titleTemplate
             description
             url
-            image
+            image {
+              url
+              width
+              height
+            }
             twitterUsername
           }
         }
@@ -53,7 +57,15 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          content: site.siteMetadata.image,
+          content: site.siteMetadata.image.url,
+        },
+        {
+          property: `og:image:width`,
+          content: site.siteMetadata.image.width,
+        },
+        {
+          property: `og:image:height`,
+          content: site.siteMetadata.image.height,
         },
         {
           property: `og:type`,
@@ -68,15 +80,23 @@ function SEO({ description, lang, meta, title }) {
           content: site.siteMetadata.twitterUsername,
         },
         {
+          name: `twitter:title`,
+          content: site.siteMetadata.titleTemplate.replace(/%s/, title),
+        },
+        {
+          name: `twitter:description`,
+          content: metaDescription,
+        },
+        {
           name: `twitter:creator`,
           content: site.siteMetadata.twitterUsername,
         },
         {
-          name: `twitter:title`,
-          content: title,
+          name: `twitter:image`,
+          content: site.siteMetadata.image,
         },
         {
-          name: `twitter:description`,
+          name: `twitter:image:alt`,
           content: metaDescription,
         },
         {

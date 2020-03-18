@@ -5,7 +5,11 @@ module.exports = {
     titleTemplate: "%s | Websites and Software by Rachel Dotey",
     description: "Hi, my name is Rachel! I build interactive websites and software.",
     url: "https://racheldotey.com",   // No trailing slash
-    image: "/images/rachel-dotey-web-and-software-developer.jpg", // Path to your image you placed in the 'static' folder
+    image: {
+      url: "/images/rachel-dotey-web-and-software-developer.jpg", // Path to your image you placed in the 'static' folder
+      width: 1750,
+      height: 1312,
+    },
     twitterUsername: "@RaeDeveloper",
   },
   plugins: [
