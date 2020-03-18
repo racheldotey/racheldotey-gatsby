@@ -3,10 +3,9 @@ module.exports = {
     author: "Rachel Dotey",
     title: "Rachel Dotey",
     titleTemplate: "%s | Websites and Software by Rachel Dotey",
-    description:
-      "Software development, interactive websites and local search engine marketing.",
+    description: "Hi, my name is Rachel! I build interactive websites and software.",
     url: "https://racheldotey.com",   // No trailing slash
-    image: "/images/snape.jpg",       // Path to your image you placed in the 'static' folder
+    image: "/images/rachel-dotey-web-and-software-developer.jpg", // Path to your image you placed in the 'static' folder
     twitterUsername: "@RaeDeveloper",
   },
   plugins: [

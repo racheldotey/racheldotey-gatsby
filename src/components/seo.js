@@ -45,7 +45,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:title`,
-          content: title,
+          content: site.siteMetadata.titleTemplate.replace(/%s/, title),
         },
         {
           property: `og:description`,
@@ -57,7 +57,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:card`,
-          content: `summary_large_image`,
+          content: `summary`,
         },
         {
           name: `twitter:site`,
@@ -76,8 +76,8 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
-          name: `twitter:image`,
-          content: metaDescription,
+          name: `fb:app_id`,
+          content: `805678473287926`,
         },
       ].concat(meta)}
     />
