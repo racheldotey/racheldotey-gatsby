@@ -72,8 +72,12 @@ function SEO({ description, lang, meta, title }) {
           content: `website`,
         },
         {
+          name: `fb:app_id`,
+          content: `805678473287926`,
+        },
+        {
           name: `twitter:card`,
-          content: `summary_image_large`,
+          content: `summary_large_image`,
         },
         {
           name: `twitter:site`,
@@ -98,10 +102,6 @@ function SEO({ description, lang, meta, title }) {
         {
           name: `twitter:image:alt`,
           content: metaDescription,
-        },
-        {
-          name: `fb:app_id`,
-          content: `805678473287926`,
         },
       ].concat(meta)}
     />
