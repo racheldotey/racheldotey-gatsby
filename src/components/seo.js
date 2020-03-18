@@ -16,9 +16,13 @@ function SEO({ description, lang, meta, title }) {
       query {
         site {
           siteMetadata {
-            title
-            description
             author
+            title
+            titleTemplate
+            description
+            url
+            image
+            twitterUsername
           }
         }
       }
@@ -33,7 +37,7 @@ function SEO({ description, lang, meta, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={site.siteMetadata.titleTemplate}
       meta={[
         {
           name: `description`,
@@ -53,11 +57,15 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
+        },
+        {
+          name: `twitter:site`,
+          content: site.siteMetadata.twitterUsername,
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          content: site.siteMetadata.twitterUsername,
         },
         {
           name: `twitter:title`,
@@ -65,6 +73,10 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:description`,
+          content: metaDescription,
+        },
+        {
+          name: `twitter:image`,
           content: metaDescription,
         },
       ].concat(meta)}
