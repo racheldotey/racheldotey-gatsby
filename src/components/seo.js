@@ -60,6 +60,10 @@ function SEO({ description, lang, meta, title }) {
           content: site.siteMetadata.image.url,
         },
         {
+          name: `og:image:alt`,
+          content: site.siteMetadata.image.alt,
+        },
+        {
           property: `og:image:width`,
           content: site.siteMetadata.image.width,
         },
@@ -97,11 +101,11 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:image`,
-          content: site.siteMetadata.image,
+          content: site.siteMetadata.image.url,
         },
         {
           name: `twitter:image:alt`,
-          content: metaDescription,
+          content: site.siteMetadata.image.alt,
         },
       ].concat(meta)}
     />

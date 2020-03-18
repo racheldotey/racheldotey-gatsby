@@ -9,6 +9,7 @@ module.exports = {
       url: "/images/rachel-dotey-web-and-software-developer.jpg", // Path to your image you placed in the 'static' folder
       width: 1750,
       height: 1312,
+      alt: "Websites and Software by Rachel Dotey",
     },
     twitterUsername: "@RaeDeveloper",
   },
