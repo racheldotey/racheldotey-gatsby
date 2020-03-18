@@ -3,6 +3,7 @@ module.exports = {
     author: "Rachel Dotey",
     title: "Rachel Dotey",
     titleTemplate: "Web Apps by Rachel - %s",
+    defaultTitle: "Websites And Software Made In Vermont",
     description: "Hi, my name is Rachel! I build interactive websites and software in Vermont.",
     keywords: "Vermont, Burlington, Web design, Web development, Marketing, Social Media, Software development, Programming, Full stack software developer",
     url: "https://racheldotey.com",   // No trailing slash

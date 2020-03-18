@@ -20,7 +20,9 @@ function SEO({ description, lang, meta, keywords, title, social }) {
             author
             title
             titleTemplate
+            defaultTitle
             description
+            keywords
             url
             image {
               alt
@@ -47,6 +49,7 @@ function SEO({ description, lang, meta, keywords, title, social }) {
       }}
       title={title}
       titleTemplate={site.siteMetadata.titleTemplate}
+      defaultTitle={site.siteMetadata.defaultTitle}
       meta={[
         {
           name: `description`,
@@ -121,7 +124,9 @@ function SEO({ description, lang, meta, keywords, title, social }) {
           content: site.siteMetadata.image.alt,
         },
       ].concat(meta)}
-    />
+    >
+    <link rel="canonical" href={currentUrl} />
+    </Helmet>
   )
 }
 
