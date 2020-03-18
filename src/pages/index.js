@@ -12,7 +12,7 @@ import ContactBanner from "../components/banner-contact"
 const IndexPage = () => (
   <Layout>
     <div className="pb-5">
-      <SEO title="Home" />
+      <SEO title="Welcome" />
       <GreetingBanner />
       <IntroductionBanner />
       <ServicesBanner />

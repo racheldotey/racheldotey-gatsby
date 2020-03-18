@@ -13,7 +13,7 @@ import SocialButtons from "../components/images/follow-my-social"
 //https://www.canva.com/templates/EADaoa2YgA8-pink-blue-design-resume/
 const AboutPage = () => (
   <Layout>
-    <SEO title="About" />
+    <SEO title="What We're About" />
     <Container className="my-5">
       <Row className="justify-content-md-center">
         <Col md={12} lg={10} className="text-center page-intro">

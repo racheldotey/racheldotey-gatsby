@@ -9,8 +9,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import { Location } from '@reach/router';
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, lang, meta, keywords, title, social }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -22,6 +23,7 @@ function SEO({ description, lang, meta, title }) {
             description
             url
             image {
+              alt
               url
               width
               height
@@ -33,7 +35,10 @@ function SEO({ description, lang, meta, title }) {
     `
   )
 
+  const currentUrl =  JSON.stringify(Location)
   const metaDescription = description || site.siteMetadata.description
+  const metaKeywords = keywords || site.siteMetadata.keywords
+  const socialTitle = social || site.siteMetadata.titleTemplate.replace(/%s/, title)
 
   return (
     <Helmet
@@ -48,12 +53,20 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
+          name: `keywords`,
+          content: metaKeywords,
+        },
+        { // Open Graph
           property: `og:title`,
-          content: site.siteMetadata.titleTemplate.replace(/%s/, title),
+          content: socialTitle,
         },
         {
           property: `og:description`,
           content: metaDescription,
+        },
+        {
+          property: `og:url`,
+          content: currentUrl,
         },
         {
           property: `og:image`,
@@ -75,11 +88,11 @@ function SEO({ description, lang, meta, title }) {
           property: `og:type`,
           content: `website`,
         },
-        {
+        { // Facebook
           name: `fb:app_id`,
           content: `805678473287926`,
         },
-        {
+        { // Twitter
           name: `twitter:card`,
           content: `summary_large_image`,
         },
@@ -88,16 +101,16 @@ function SEO({ description, lang, meta, title }) {
           content: site.siteMetadata.twitterUsername,
         },
         {
+          name: `twitter:creator`,
+          content: site.siteMetadata.twitterUsername,
+        },
+        {
           name: `twitter:title`,
-          content: site.siteMetadata.titleTemplate.replace(/%s/, title),
+          content: socialTitle,
         },
         {
           name: `twitter:description`,
           content: metaDescription,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata.twitterUsername,
         },
         {
           name: `twitter:image`,

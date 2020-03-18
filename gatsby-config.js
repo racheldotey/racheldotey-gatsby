@@ -2,14 +2,15 @@ module.exports = {
   siteMetadata: {
     author: "Rachel Dotey",
     title: "Rachel Dotey",
-    titleTemplate: "%s | Websites and Software by Rachel Dotey",
+    titleTemplate: "Programming Magic by Rachel - %s",
     description: "Hi, my name is Rachel! I build interactive websites and software.",
+    keywords: "Vermont, Burlington, Web design, Web development, Marketing, Social Media, Software development, Programming, Full stack software developer",
     url: "https://racheldotey.com",   // No trailing slash
     image: {
       url: "/images/rachel-dotey-web-and-software-developer.jpg", // Path to your image you placed in the 'static' folder
       width: 1750,
       height: 1312,
-      alt: "Websites and Software by Rachel Dotey",
+      alt: "Internet Wizardry Through Websites and Software by Rachel Dotey",
     },
     twitterUsername: "@RaeDeveloper",
   },
