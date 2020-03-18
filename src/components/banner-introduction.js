@@ -22,7 +22,7 @@ const IntroductionBanner = () => {
                 <Row className="d-flex h-100 py-3 mb-4 mb-sm-0">
                     <Col sm={12} md={4} lg={6} className="justify-content-center align-self-center text-center pb-3">
                         <div className="profile-image">
-                            <Img style={{ "max-height": "340px", "max-width": "340px" }} fluid={data.imageLaptop.childImageSharp.fluid} />
+                            <Img style={{ "maxHeigth": "340px", "maxWidth": "340px" }} fluid={data.imageLaptop.childImageSharp.fluid} />
                         </div>
                     </Col>
                     <Col sm={12} md={8} lg={6} className="pt-3">

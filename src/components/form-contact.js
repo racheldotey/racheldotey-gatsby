@@ -11,12 +11,12 @@ const ContactForm = () => (
         <p className="h2 text-center">Contact Me</p>
 
         <div className="form-group">
-            <label for="name">Name</label>
+            <label htmlFor="name">Name</label>
             <input type="text" id="name" name="name" className="form-control" placeholder="Enter your Name" />
         </div>
 
         <div className="form-group">
-            <label for="email">Email address</label>
+            <label htmlFor="email">Email address</label>
             <input type="email" id="email" name="email" className="form-control" placeholder="Your best email" />
             <small id="weNeverShareYourEmail" className="form-text text-muted">
                 We'll never share your email with anyone else.
@@ -24,17 +24,17 @@ const ContactForm = () => (
         </div>
         
         <div className="form-group">
-            <label for="phone">Phone</label>
+            <label htmlFor="phone">Phone</label>
             <input type="text" id="phone" name="phone" className="form-control" placeholder="Phone number" />
         </div>
         
         <div className="form-group">
-            <label for="message">How can I help?</label>
+            <label htmlFor="message">How can I help?</label>
             <textarea id="message" name="message" rows="3" className="form-control" placeholder="What can I do for you?"></textarea>
         </div>
 
         <div className="text-right">
-            <button type="submit" class="btn-lg button button-light">
+            <button type="submit" className="btn-lg button button-light">
                 Send Message
             </button>
         </div>

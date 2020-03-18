@@ -17,7 +17,7 @@ const CallOutBanner = () => {
   `)
 
   return (
-    <section class="callout-banner">
+    <section className="callout-banner">
       <Container>
         <Row className="d-flex h-100 py-3 mb-xs-3">
           <Col sm={12}  md={8}  lg={6} className="order-md-first">
@@ -31,7 +31,7 @@ const CallOutBanner = () => {
           <Col sm={12}  md={4}  lg={6} className="align-self-center text-center py-3">
             <div className="profile-image">
               <Link className="image-link" to="/contact">
-                <Img style={{ "max-height": "340px", "max-width": "340px" }} fluid={data.imageSign.childImageSharp.fluid} />
+                <Img style={{ "maxHeight": "340px", "maxWidth": "340px" }} fluid={data.imageSign.childImageSharp.fluid} />
               </Link>
             </div>
           </Col>

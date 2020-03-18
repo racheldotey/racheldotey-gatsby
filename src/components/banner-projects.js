@@ -2,9 +2,9 @@ import { Link } from "gatsby"
 import React from "react"
 
 const ProjectsBanner = () => (
-    <section class="full-banner projects-banner" id="hero">
-        <div class="container">
-            <h1><span class="highlight">ProjectsBanner</span>!</h1>
+    <section className="full-banner projects-banner" id="hero">
+        <div className="container">
+            <h1><span className="highlight">ProjectsBanner</span>!</h1>
             <Link to="#contact" className="button button-dark">Lets Talk</Link>
         </div>
     </section>

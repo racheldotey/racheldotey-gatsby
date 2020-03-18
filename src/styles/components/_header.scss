@@ -1,6 +1,6 @@
 div.loding-bar-top {
     height: 5px;
-    background-image: linear-gradient(135deg,#02aab0,#00cdac);
+    background-image: linear-gradient(135deg, #02aab0, #00cdac);
 }
 
 .navbar {
@@ -16,14 +16,27 @@ div.loding-bar-top {
             line-height: 1.5rem;
             font-weight: bold;
         }
+
         .tagline {
             color: $color-base-font;
             display: block;
             font-size: 1rem;
             line-height: 1.5rem;
         }
+
+        a {
+            &:link {}
+
+            &:visited {}
+
+            &:focus,
+            &:hover,
+            &:active {
+                text-decoration: none;
+            }
+        }
     }
-    
+
 }
 
 // Extra small devices (portrait phones, less than 576px)
@@ -44,7 +57,7 @@ div.loding-bar-top {
                 padding: 2rem 0;
                 text-align: center;
             }
-            
+
         }
     }
 }

@@ -26,7 +26,7 @@ const NotFoundPage = () => {
         <Row>
           <Col sm={12} md={5} lg={4} className="pb-3 text-center">
             <div className="profile-image">
-              <Img style={{ "max-height": "340px", "max-width": "340px" }} fluid={data.imageYouAreHere.childImageSharp.fluid} />
+              <Img style={{ "maxHeight": "340px", "maxWidth": "340px" }} fluid={data.imageYouAreHere.childImageSharp.fluid} />
             </div>
           </Col>
           <Col sm={12} md={7} lg={8}>

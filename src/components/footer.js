@@ -9,7 +9,7 @@ import Signature from "./images/signature-black"
 import SocialButtons from "./images/follow-my-social"
 
 const Footer = ({ siteTitle }) => (
-  <footer class="footer">
+  <footer className="footer">
     <Container className="my-5">
       <Row>
         <Col sm={12} md={4}>
@@ -17,9 +17,9 @@ const Footer = ({ siteTitle }) => (
             <h4>How can I make<br />
             <span className="highlight">your business better</span>?</h4>
 
-            <div class="call-to-action">
+            <div className="call-to-action">
               <Link title="I would love to talk about your business!" to="/contact" className="button button-dark">
-                <span>Lets discuss your  ideas</span><i class="fal fa-long-arrow-right" aria-hidden="true"></i>
+                <span>Lets discuss your  ideas</span><i className="fal fa-long-arrow-right" aria-hidden="true"></i>
               </Link>
             </div>
           </div>
@@ -50,11 +50,11 @@ const Footer = ({ siteTitle }) => (
           <BuiltWithLogos/><br />
           <small className="text-muted">optimized for display on a</small>
           <span>&nbsp;&nbsp;</span>
-          <span class="badge badge-secondary d-inline d-sm-none">x-small</span>
-          <span class="badge badge-secondary d-none d-sm-inline d-md-none">small</span>
-          <span class="badge badge-secondary d-none d-md-inline d-lg-none">medium</span>
-          <span class="badge badge-secondary d-none d-lg-inline d-xl-none">large</span>
-          <span class="badge badge-secondary d-none d-xl-inline">x-large</span>
+          <span className="badge badge-secondary d-inline d-sm-none">x-small</span>
+          <span className="badge badge-secondary d-none d-sm-inline d-md-none">small</span>
+          <span className="badge badge-secondary d-none d-md-inline d-lg-none">medium</span>
+          <span className="badge badge-secondary d-none d-lg-inline d-xl-none">large</span>
+          <span className="badge badge-secondary d-none d-xl-inline">x-large</span>
           <span>&nbsp;&nbsp;</span>
           <small className="text-muted">screen</small>
         </Col>

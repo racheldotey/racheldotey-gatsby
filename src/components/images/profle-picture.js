@@ -16,6 +16,6 @@ export default () => {
   `)
 
   return (<div className="profile-image">
-      <Img style={{"max-height": "210px", "max-width": "210px"}} fluid={data.placeholderImage.childImageSharp.fluid} />
+      <Img style={{"maxHeight": "210px", "maxWidth": "210px"}} fluid={data.placeholderImage.childImageSharp.fluid} />
     </div>)
 }
