@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     author: "Rachel Dotey",
-    title: "Websites and Software by Rachel Dotey",
+    title: "Rachel Dotey",
     titleTemplate: "%s | Websites and Software by Rachel Dotey",
     description:
       "Software development, interactive websites and local search engine marketing.",
