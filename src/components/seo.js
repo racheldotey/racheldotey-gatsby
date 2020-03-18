@@ -9,7 +9,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-import { Location } from '@reach/router';
 
 function SEO({ description, lang, meta, keywords, title, social }) {
   const { site } = useStaticQuery(
@@ -23,7 +22,7 @@ function SEO({ description, lang, meta, keywords, title, social }) {
             defaultTitle
             description
             keywords
-            url
+            siteUrl
             image {
               alt
               url
@@ -125,7 +124,7 @@ function SEO({ description, lang, meta, keywords, title, social }) {
         },
       ].concat(meta)}
     >
-    <link rel="canonical" href={currentUrl} />
+      <link rel="canonical" href={currentUrl} />
     </Helmet>
   )
 }

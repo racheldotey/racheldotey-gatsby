@@ -6,7 +6,7 @@ module.exports = {
     defaultTitle: "Websites And Software Made In Vermont",
     description: "Hi, my name is Rachel! I build interactive websites and software in Vermont.",
     keywords: "Vermont, Burlington, Web design, Web development, Marketing, Social Media, Software development, Programming, Full stack software developer",
-    url: "https://racheldotey.com",   // No trailing slash
+    siteUrl: "https://racheldotey.com",   // No trailing slash
     image: {
       url: "https://racheldotey.com/images/rachel-dotey-web-and-software-developer.jpg", // Path to your image you placed in the 'static' folder
       width: 1750,
@@ -16,6 +16,13 @@ module.exports = {
     twitterUsername: "@RaeDeveloper",
   },
   plugins: [
+    'gatsby-plugin-sitemap',
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-32666435-1",
+      },
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
@@ -52,12 +59,6 @@ module.exports = {
             variants: [`400`, `700`]
           },
         ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "UA-32666435-1",
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
