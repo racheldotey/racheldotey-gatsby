@@ -43,7 +43,7 @@ export default () => {
           }
         }
       }
-      logoNetlify: file(relativePath: { eq: "icon_dev_netlify_500.png" }) {
+      logoNetlify: file(relativePath: { eq: "icon_dev_netlify.png" }) {
         childImageSharp {
           fixed(width: 56) {
             ...GatsbyImageSharpFixed
