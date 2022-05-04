@@ -3,15 +3,15 @@ module.exports = {
     author: "Rachel Dotey",
     title: "Rachel Dotey",
     titleTemplate: "Web Apps by Rachel - %s",
-    defaultTitle: "Websites And Software Made In Vermont",
-    description: "Hi, my name is Rachel! I build interactive websites and software in Vermont.",
+    defaultTitle: "Website And Software Development",
+    description: "Hi, my name is Rachel! I build interactive websites and software for clients all over the world.",
     keywords: "Vermont, Burlington, Web design, Web development, Marketing, Social Media, Software development, Programming, Full stack software developer",
-    siteUrl: "https://racheldotey.com",   // No trailing slash
+    siteUrl: "https://racheldotey.ninja",   // No trailing slash
     image: {
-      url: "https://racheldotey.com/images/rachel-dotey-web-and-software-developer.jpg", // Path to your image you placed in the 'static' folder
+      url: "https://racheldotey.ninja/images/rachel-dotey-web-and-software-developer.jpg", // Path to your image you placed in the 'static' folder
       width: 1750,
       height: 1312,
-      alt: "Web design and software development by Rachel Dotey, located in Burlington Vermont.",
+      alt: "Web design and software development by Rachel Dotey.",
     },
     twitterUsername: "@RaeDeveloper",
   },
@@ -25,6 +25,7 @@ module.exports = {
     },
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
