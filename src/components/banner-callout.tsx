@@ -3,7 +3,7 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import { Container, Row, Col } from "react-bootstrap"
 
-const CallOutBanner = () => {
+export const CallOutBanner = () => {
   const data = useStaticQuery(graphql`
     query {
       imageSign: file(relativePath: { eq: "stock-this-is-the-sign.jpg" }) {

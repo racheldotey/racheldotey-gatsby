@@ -3,9 +3,7 @@ import { useStaticQuery, graphql, Link, HeadFC, PageProps } from "gatsby"
 import Img from "gatsby-image"
 import { Container, Row, Col } from "react-bootstrap"
 
-
 import Layout from "../components/layout"
-import IntroductionBanner from "../components/banner-introduction"
 import ContactBanner from "../components/banner-contact"
 
 const IndexPage: React.FC<PageProps> = () => {
@@ -21,6 +19,13 @@ const IndexPage: React.FC<PageProps> = () => {
         imageResponsivePhone: file(relativePath: { eq: "stock-responsive-phone-banner.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 600, maxHeight: 300) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+        imageLaptop: file(relativePath: { eq: "stock-responsive-laptop-square.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 512, maxHeight: 512) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
@@ -49,7 +54,26 @@ const IndexPage: React.FC<PageProps> = () => {
           </div>
         </section>
 
-        <IntroductionBanner />
+        <section className="introduction-banner"><a href="#intro"></a>
+          <Container>
+            <Row className="d-flex h-100 py-3 mb-4 mb-sm-0">
+              <Col sm={12} md={4} lg={6} className="justify-content-center align-self-center text-center pb-3">
+                <div className="profile-image">
+                  <Img style={{ "maxHeigth": "340px", "maxWidth": "340px" }} fluid={data.imageLaptop.childImageSharp.fluid} />
+                </div>
+              </Col>
+              <Col sm={12} md={8} lg={6} className="pt-3">
+                <span className="h2">It's great to have you visit!</span>
+                <p className="lead">I'm a software developer with experience designing and developing interactive web applications.</p>
+                <p className="lead">I am interested in helping small businesses gain visibility on the internet.
+                  Create strong brands and stay competitive in the market.</p>
+                <div className="text-center">
+                  <Link to="/services" className="button button-light">Look at what I do</Link>
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </section>
 
         <section className="services-banner"><a href="#services"></a>
           <Container className="my-5 py-5">
