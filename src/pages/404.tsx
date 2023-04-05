@@ -1,12 +1,11 @@
-import React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import * as React from "react"
+import { useStaticQuery, graphql, Link, HeadFC, PageProps } from "gatsby"
 import Img from "gatsby-image"
 import { Container, Row, Col } from "react-bootstrap"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
 
-const NotFoundPage = () => {
+const NotFoundPage: React.FC<PageProps> = () => {
   const data = useStaticQuery(graphql`
     query {
       imageYouAreHere: file(relativePath: { eq: "stock-you-are-here.jpg" }) {
@@ -21,7 +20,6 @@ const NotFoundPage = () => {
 
   return (
     <Layout>
-      <SEO title="404 Not found" />
       <Container className="my-5">
         <Row>
           <Col sm={12} md={5} lg={4} className="pb-3 text-center">
@@ -55,3 +53,5 @@ const NotFoundPage = () => {
 }
 
 export default NotFoundPage
+
+export const Head: HeadFC = () => <title>Page Not found | RachelDotey.ninja</title>

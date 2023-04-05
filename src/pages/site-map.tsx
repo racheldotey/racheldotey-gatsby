@@ -1,15 +1,12 @@
-import React from "react"
+import * as React from "react"
 import { Link } from "gatsby"
+import type { HeadFC, PageProps } from "gatsby"
 import { Container, Row, Col } from "react-bootstrap"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
 
-import ProjectsBanner from "../components/banner-projects"
-
-const ServicesPage = () => (
+const ServicesPage: React.FC<PageProps> = () => (
   <Layout>
-    <SEO title="Site Map" />
     <Container className="my-5">
       <Row className="justify-content-md-center">
         <Col md={12} lg={10} className="text-center page-intro">
@@ -52,3 +49,5 @@ const ServicesPage = () => (
 )
 
 export default ServicesPage
+
+export const Head: HeadFC = () => <title>Site Map | RachelDotey.ninja</title>

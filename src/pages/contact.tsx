@@ -1,13 +1,12 @@
-import React from "react"
+import * as React from "react"
+import type { HeadFC, PageProps } from "gatsby"
 import { Container, Row, Col } from "react-bootstrap"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
 import ContactBanner from "../components/banner-contact"
 
-const ContactPage = () => (
+const ContactPage: React.FC<PageProps> = () => (
   <Layout>
-    <SEO title="Contact" />
     <Container className="my-5">
       <Row className="justify-content-md-center">
         <Col md={12} lg={10} className="text-center page-intro">
@@ -24,3 +23,5 @@ const ContactPage = () => (
 )
 
 export default ContactPage
+
+export const Head: HeadFC = () => <title>Contact Form | RachelDotey.ninja</title>

@@ -1,5 +1,5 @@
 import { Link } from "gatsby"
-import React from "react"
+import * as React from "react"
 
 const GreetingBanner = () => (
     <section className="greeting-banner"><a href="#greeting"></a>

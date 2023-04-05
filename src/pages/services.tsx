@@ -1,13 +1,14 @@
-import React from "react"
+import * as React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
+import type { HeadFC, PageProps } from "gatsby"
 import Img from "gatsby-image"
+import { StaticImage } from "gatsby-plugin-image"
 import { Container, Row, Col, Card } from "react-bootstrap"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
 import CallOutBanner from "../components/banner-callout"
 
-const ServicesPage = () => {
+const ServicesPage: React.FC<PageProps> = () => {
   const data = useStaticQuery(graphql`
     query {
       imageAnalytics: file(relativePath: { eq: "stock-online-marketing.jpg" }) {
@@ -36,7 +37,6 @@ const ServicesPage = () => {
 
   return (
     <Layout>
-      <SEO title="Services" />
       <Container className="my-5">
         <Row className="justify-content-md-center">
           <Col md={12} lg={10} className="text-center page-intro">
@@ -128,3 +128,5 @@ const ServicesPage = () => {
 }
 
 export default ServicesPage
+
+export const Head: HeadFC = () => <title>Services | RachelDotey.ninja</title>

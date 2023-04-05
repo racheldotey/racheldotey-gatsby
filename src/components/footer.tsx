@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
+import * as React from "react"
 import { Container, Row, Col } from "react-bootstrap"
 
 
@@ -15,7 +15,7 @@ const Footer = ({ siteTitle }) => (
         <Col sm={12} md={4}>
           <div className="text-center text-md-left mb-5 mb-md-0">
             <h4>How can I make<br />
-            <span className="highlight">your business better</span>?</h4>
+              <span className="highlight">your business better</span>?</h4>
 
             <div className="call-to-action">
               <Link title="I would love to talk about your business!" to="/contact" className="button button-dark">
@@ -33,10 +33,10 @@ const Footer = ({ siteTitle }) => (
         <Col xs={12} sm={6} md={4}>
           <div className="text-center text-md-left">
             <h4 className="text-muted">Connect with Rachel</h4>
-              <p>
-                <a title="Call me at 607-386-5872" href="tel:607-386-5872">607-386-5872</a><br />
-                <Link title="Lets discuss your business!" to="/contact">hello@racheldotey.com</Link>
-              </p>
+            <p>
+              <a title="Call me at 607-386-5872" href="tel:607-386-5872">607-386-5872</a><br />
+              <Link title="Lets discuss your business!" to="/contact">hello@racheldotey.com</Link>
+            </p>
             <SocialButtons />
           </div>
         </Col>
@@ -47,7 +47,7 @@ const Footer = ({ siteTitle }) => (
       <Row>
         <Col className="built-with-logos text-center">
           <small className="text-muted">this website was built with</small><br />
-          <BuiltWithLogos/><br />
+          <BuiltWithLogos /><br />
           <small className="text-muted">optimized for display on a</small>
           <span>&nbsp;&nbsp;</span>
           <span className="badge badge-secondary d-inline d-sm-none">x-small</span>

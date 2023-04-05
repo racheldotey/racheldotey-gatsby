@@ -1,9 +1,9 @@
-import React from "react"
+import * as React from "react"
 import { Link } from "gatsby"
+import type { HeadFC, PageProps } from "gatsby"
 import { Container, Row, Col } from "react-bootstrap"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
 import CallOutBanner from "../components/banner-callout"
 
 import ProfilePicture from "../components/images/profle-picture"
@@ -11,9 +11,8 @@ import Signature from "../components/images/signature-black"
 import SocialButtons from "../components/images/follow-my-social"
 
 //https://www.canva.com/templates/EADaoa2YgA8-pink-blue-design-resume/
-const AboutPage = () => (
+const AboutPage: React.FC<PageProps> = () => (
   <Layout>
-    <SEO title="What We're About" />
     <Container className="my-5">
       <Row className="justify-content-md-center">
         <Col md={12} lg={10} className="text-center page-intro">
@@ -42,3 +41,5 @@ const AboutPage = () => (
 )
 
 export default AboutPage
+
+export const Head: HeadFC = () => <title>About Me | RachelDotey.ninja</title>

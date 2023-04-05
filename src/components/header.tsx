@@ -1,6 +1,6 @@
-import Link from "gatsby-link"
+import { Link } from "gatsby-link"
 import PropTypes from "prop-types"
-import React from "react"
+import * as React from "react"
 
 import { Navbar, Nav } from "react-bootstrap"
 
