@@ -4,7 +4,7 @@ import * as React from "react"
 
 import { Navbar, Nav } from "react-bootstrap"
 
-const Header = ({ siteTitle }) => (
+export const Header = ({ siteTitle }) => (
   <header>
     <Navbar collapseOnSelect expand="sm">
       <div className="container">

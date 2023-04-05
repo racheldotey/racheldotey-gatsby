@@ -22,18 +22,22 @@ const config: GatsbyConfig = {
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
   plugins: [
-    "gatsby-plugin-sass",
-    "gatsby-plugin-google-gtag",
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: ["UA-32666435-1"],
+      },
+    },
     "gatsby-plugin-image",
-    "gatsby-plugin-sitemap",
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        "icon": "src/images/icon.png"
+        "icon": "src/images/favicon.png"
       }
     },
+    "gatsby-plugin-sass",
     "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
+    "gatsby-plugin-sitemap",
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -41,7 +45,8 @@ const config: GatsbyConfig = {
         "path": "./src/images/"
       },
       __key: "images"
-    }
+    },
+    "gatsby-transformer-sharp",
   ]
 };
 

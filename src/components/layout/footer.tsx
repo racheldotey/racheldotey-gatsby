@@ -4,11 +4,11 @@ import * as React from "react"
 import { Container, Row, Col } from "react-bootstrap"
 
 
-import BuiltWithLogos from "./images/built-with-logos"
-import Signature from "./images/signature-black"
-import SocialButtons from "./images/follow-my-social"
+import BuiltWithLogos from "../images/built-with-logos"
+import Signature from "../images/signature-black"
+import SocialButtons from "../images/follow-my-social"
 
-const Footer = ({ siteTitle }) => (
+export const Footer = ({ siteTitle }) => (
   <footer className="footer">
     <Container className="my-5">
       <Row>
