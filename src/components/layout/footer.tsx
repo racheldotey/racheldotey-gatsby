@@ -1,8 +1,10 @@
+
+import * as React from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import * as React from "react"
 import { Container, Row, Col } from "react-bootstrap"
 
+import type { PageProps } from "gatsby"
 
 import BuiltWithLogos from "../images/built-with-logos"
 import Signature from "../images/signature-black"
