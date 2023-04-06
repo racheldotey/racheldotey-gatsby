@@ -2,7 +2,7 @@ import * as React from "react"
 
 import { Container, Row, Col } from "react-bootstrap"
 import ContactForm from "../components/form-contact"
-import SocialButtons from "../components/images/follow-my-social"
+import SocialButtons from "./follow-my-social"
 
 const LocationColumn = () => (
     <div className="text-center">
