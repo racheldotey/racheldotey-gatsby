@@ -3,13 +3,13 @@ import { StaticImage } from "gatsby-plugin-image";
 
 export default () => {
   return (
-    <div className="follow-my-social">
+    <div className="follow-my-social inline-images">
       <a
         title="Fork my Github"
         href="https://github.com/racheldotey"
         target="_blank"
         rel="noopener noreferrer"
-        className="pr-2"
+        className="pe-2"
       >
         <StaticImage
           src="../images/icon_social_github.png"
@@ -25,7 +25,7 @@ export default () => {
         href="https://instagram.com/dancingrabbit"
         target="_blank"
         rel="noopener noreferrer"
-        className="pr-2"
+        className="pe-2"
       >
         <StaticImage
           src="../images/icon_social_instagram.png"
@@ -41,7 +41,7 @@ export default () => {
         href="https://twitter.com/RaeDeveloper"
         target="_blank"
         rel="noopener noreferrer"
-        className="pr-2"
+        className="pe-2"
       >
         <StaticImage
           src="../images/icon_social_twitter.png"
@@ -57,7 +57,7 @@ export default () => {
         href="https://www.facebook.com/rachelldotey"
         target="_blank"
         rel="noopener noreferrer"
-        className="pr-2"
+        className="pe-2"
       >
         <StaticImage
           src="../images/icon_social_facebook.png"

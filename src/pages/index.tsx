@@ -13,11 +13,10 @@ const IndexPage: React.FC<PageProps> = () => {
         <section className="greeting-banner">
           <a href="#greeting"></a>
           <div className="d-flex h-100">
-            <div className="container justify-content-center align-self-center text-right">
+            <div className="container justify-content-center align-self-center text-end">
               <h1>
                 Hi, my name is <span className="highlight">Rachel</span>!<br />I
-                build <span className="highlight">interactive</span> websites
-                and software.
+                build <span className="highlight">responsive web apps</span>.
               </h1>
             </div>
           </div>
@@ -39,7 +38,7 @@ const IndexPage: React.FC<PageProps> = () => {
                     alt="This is the developer you are looking for..."
                     placeholder="blurred"
                     layout="fullWidth"
-                    style={{ maxHeight: "340px", maxWidth: "340px" }}
+                    style={{ maxHeight: '340px', maxWidth: '340px' }}
                   />
                 </div>
               </Col>
@@ -77,7 +76,6 @@ const IndexPage: React.FC<PageProps> = () => {
                       alt="This is the developer you are looking for..."
                       placeholder="blurred"
                       layout="fullWidth"
-                      style={{ maxHeight: "340px", maxWidth: "340px" }}
                     />
                   </div>
                   <p className="mt-3">
@@ -104,9 +102,7 @@ const IndexPage: React.FC<PageProps> = () => {
                       alt="This is the developer you are looking for..."
                       placeholder="blurred"
                       layout="fullWidth"
-                      style={{ maxHeight: "340px", maxWidth: "340px" }}
                     />
-                    ;
                   </div>
                   <p className="mt-3">
                     Getting found in Google is tricky. From content strategy and
@@ -131,7 +127,6 @@ const IndexPage: React.FC<PageProps> = () => {
                       alt="This is the developer you are looking for..."
                       placeholder="blurred"
                       layout="fullWidth"
-                      style={{ maxHeight: "340px", maxWidth: "340px" }}
                     />
                   </div>
                   <p className="mt-3">

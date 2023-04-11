@@ -1,12 +1,12 @@
-import * as React from "react";
-import { Link } from "gatsby";
-import type { HeadFC, PageProps } from "gatsby";
-import { Container, Row, Col } from "react-bootstrap";
-import { StaticImage } from "gatsby-plugin-image";
+import * as React from 'react';
+import { Link } from 'gatsby';
+import type { HeadFC, PageProps } from 'gatsby';
+import { Container, Row, Col } from 'react-bootstrap';
+import { StaticImage } from 'gatsby-plugin-image';
 
-import Layout from "../components/layout";
-import CallOutBanner from "../components/banner-callout";
-import SocialButtons from "../components/follow-my-social";
+import Layout from '../components/layout';
+import CallOutBanner from '../components/banner-callout';
+import SocialButtons from '../components/follow-my-social';
 
 //https://www.canva.com/templates/EADaoa2YgA8-pink-blue-design-resume/
 const AboutPage: React.FC<PageProps> = () => (
@@ -14,13 +14,15 @@ const AboutPage: React.FC<PageProps> = () => (
     <Container className="my-5">
       <Row className="justify-content-md-center">
         <Col md={12} lg={10} className="text-center page-intro">
-          <StaticImage
-            src="../images/stock-this-is-the-sign.jpg"
-            alt="This is the developer you are looking for..."
-            placeholder="blurred"
-            layout="fullWidth"
-            style={{ maxHeight: "340px", maxWidth: "340px" }}
-          />
+          <div className="inline-image">
+            <StaticImage
+              src="../images/signature_236x64.png"
+              alt="This is the developer you are looking for..."
+              placeholder="blurred"
+              layout="fixed"
+              width={236}
+            />
+          </div>
           <p className="lead">
             Web Design, Software Development, and Search Engine Marketing
           </p>
@@ -45,7 +47,7 @@ const AboutPage: React.FC<PageProps> = () => (
         <Col sm={12} md={6} className="text-center">
           <div className="profile-image">
             <StaticImage
-              src="../images/signature_236x64.png"
+              src="../images/picture-square.png"
               alt="This is the developer you are looking for..."
               placeholder="blurred"
               layout="fixed"

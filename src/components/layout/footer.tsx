@@ -1,14 +1,37 @@
+import * as React from 'react';
+import { Link } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
+import PropTypes from 'prop-types';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
-import * as React from "react"
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import { Container, Row, Col } from "react-bootstrap"
-import { StaticImage } from "gatsby-plugin-image";
+import type { PageProps } from 'gatsby';
 
-import type { PageProps } from "gatsby"
+import BuiltWithLogos from '../built-with-logos';
+import SocialButtons from '../follow-my-social';
 
-import BuiltWithLogos from "../built-with-logos"
-import SocialButtons from "../follow-my-social"
+function CurrentScreenSizeBadge() {
+  return (
+    <>
+      <small className="text-muted">optimized for display on a</small>
+      <span>&nbsp;&nbsp;</span>
+      <span className="badge bg-secondary d-inline d-sm-none">x-small</span>
+      <span className="badge bg-secondary d-none d-sm-inline d-md-none">
+        small
+      </span>
+      <span className="badge bg-secondary d-none d-md-inline d-lg-none">
+        medium
+      </span>
+      <span className="badge bg-secondary d-none d-lg-inline d-xl-none">
+        large
+      </span>
+      <span className="badge bg-secondary d-none d-xl-inline">x-large</span>
+      <span>&nbsp;&nbsp;</span>
+      <small className="text-muted">screen</small>
+    </>
+  );
+}
 
 export const Footer = ({ siteTitle }) => (
   <footer className="footer">
@@ -67,26 +90,7 @@ export const Footer = ({ siteTitle }) => (
           <small className="text-muted">this website was built with</small>
           <br />
           <BuiltWithLogos />
-          <br />
-          <small className="text-muted">optimized for display on a</small>
-          <span>&nbsp;&nbsp;</span>
-          <span className="badge badge-secondary d-inline d-sm-none">
-            x-small
-          </span>
-          <span className="badge badge-secondary d-none d-sm-inline d-md-none">
-            small
-          </span>
-          <span className="badge badge-secondary d-none d-md-inline d-lg-none">
-            medium
-          </span>
-          <span className="badge badge-secondary d-none d-lg-inline d-xl-none">
-            large
-          </span>
-          <span className="badge badge-secondary d-none d-xl-inline">
-            x-large
-          </span>
-          <span>&nbsp;&nbsp;</span>
-          <small className="text-muted">screen</small>
+          <CurrentScreenSizeBadge />
         </Col>
       </Row>
     </Container>
@@ -96,9 +100,9 @@ export const Footer = ({ siteTitle }) => (
         <Col sm={6} className="text-center text-sm-left">
           <Link
             title={
-              "© 2012-" +
+              '© 2012-' +
               new Date().getFullYear() +
-              " Rachel L Dotey, Website and Software Developer"
+              ' Rachel L Dotey, Website and Software Developer'
             }
             to="/contact"
           >
@@ -112,10 +116,10 @@ export const Footer = ({ siteTitle }) => (
           </Link>
         </Col>
         <Col sm={6}>
-          <div className="d-flex h-100 text-center">
-            <div className="justify-content-center align-self-center ml-auto mr-auto mr-sm-0">
+          <div className="d-flex h-100 align-items-center">
+            <div className="ms-auto">
               <small className="text-muted">
-                <Link to="/site-map">Site Map</Link> |{" "}
+                <Link to="/site-map">Site Map</Link> |{' '}
                 <Link to="/policies">Website Policies</Link>
               </small>
             </div>
@@ -128,10 +132,10 @@ export const Footer = ({ siteTitle }) => (
 
 Footer.propTypes = {
   siteTitle: PropTypes.string,
-}
+};
 
 Footer.defaultProps = {
   siteTitle: ``,
-}
+};
 
-export default Footer
+export default Footer;

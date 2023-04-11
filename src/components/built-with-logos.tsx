@@ -1,9 +1,9 @@
-import * as React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import * as React from 'react';
+import { StaticImage } from 'gatsby-plugin-image';
 
 export default () => {
   return (
-    <>
+    <div className="built-with-badges inline-images">
       <a
         title="HTML5 is the latest evolution of the standard that defines HTML."
         href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
@@ -12,9 +12,10 @@ export default () => {
       >
         <StaticImage
           src="../images/icon_dev_html5.png"
-          alt="This is the developer you are looking for..."
+          alt="HTML5 is the latest evolution of the standard that defines HTML."
           placeholder="blurred"
           layout="fixed"
+          height={56}
           width={56}
         />
       </a>
@@ -26,9 +27,10 @@ export default () => {
       >
         <StaticImage
           src="../images/icon_dev_css3.png"
-          alt="This is the developer you are looking for..."
+          alt="CSS3 is the latest evolution of the Cascading Style Sheets language."
           placeholder="blurred"
           layout="fixed"
+          height={56}
           width={56}
         />
       </a>
@@ -40,9 +42,10 @@ export default () => {
       >
         <StaticImage
           src="../images/icon_dev_sass.png"
-          alt="This is the developer you are looking for..."
+          alt="Sass is the most mature, stable, and powerful professional grade CSS extension language in the world."
           placeholder="blurred"
           layout="fixed"
+          height={56}
           width={56}
         />
       </a>
@@ -55,9 +58,10 @@ export default () => {
       >
         <StaticImage
           src="../images/icon_dev_nodejs.png"
-          alt="This is the developer you are looking for..."
+          alt="Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine."
           placeholder="blurred"
           layout="fixed"
+          height={56}
           width={56}
         />
       </a>
@@ -69,9 +73,10 @@ export default () => {
       >
         <StaticImage
           src="../images/icon_dev_reactjs.png"
-          alt="This is the developer you are looking for..."
+          alt="React.js is a JavaScript library for building user interfaces."
           placeholder="blurred"
           layout="fixed"
+          height={56}
           width={56}
         />
       </a>
@@ -83,9 +88,10 @@ export default () => {
       >
         <StaticImage
           src="../images/icon_dev_gatsbyjs.png"
-          alt="This is the developer you are looking for..."
+          alt="Gatsby.js is a free and open source framework based on React that helps developers build blazing fast websites and apps."
           placeholder="blurred"
           layout="fixed"
+          height={56}
           width={56}
         />
       </a>
@@ -97,9 +103,10 @@ export default () => {
       >
         <StaticImage
           src="../images/icon_dev_graphql.png"
-          alt="This is the developer you are looking for..."
+          alt="GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data."
           placeholder="blurred"
           layout="fixed"
+          height={56}
           width={56}
         />
       </a>
@@ -111,12 +118,13 @@ export default () => {
       >
         <StaticImage
           src="../images/icon_dev_netlify.png"
-          alt="This is the developer you are looking for..."
+          alt="This bad mama jama website is hosted on Netlify"
           placeholder="blurred"
           layout="fixed"
+          height={56}
           width={56}
         />
       </a>
-    </>
+    </div>
   );
 };

@@ -1,11 +1,17 @@
 .image-framed {
-        text-align: center;
-        .gatsby-image-wrapper {
-            img {
-                padding: 5px;
-                border: 1px solid $color-divider-color;
-                border-radius: 5px;
-                margin: 0 auto;
-            }
-        }
+  text-align: center;
+  .gatsby-image-wrapper {
+    img {
+      padding: 5px;
+      border: 1px solid $color-divider-color;
+      border-radius: 5px;
     }
+    margin: 0 auto;
+  }
+}
+
+.inline-img .gatsby-image-wrapper,
+.inline-image .gatsby-image-wrapper,
+.inline-images .gatsby-image-wrapper {
+  display: inline-block;
+}
