@@ -14,7 +14,7 @@ const NotFoundPage: React.FC<PageProps> = () => {
             <div className="profile-image">
               <StaticImage
                 src="../images/stock-you-are-here.jpg"
-                alt="Honestly, we're as lost as you are..."
+                alt="Honestly, I'm as lost as you are..."
                 placeholder="blurred"
                 layout="fullWidth"
                 style={{ maxHeight: "340px", maxWidth: "340px" }}

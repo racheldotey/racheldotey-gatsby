@@ -1,68 +1,72 @@
-import { Link } from 'gatsby-link';
-import PropTypes from 'prop-types';
 import * as React from 'react';
-
+import { Link } from 'gatsby-link';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
-export const Header = ({ siteTitle }) => (
-  <header>
-    <Navbar collapseOnSelect expand="sm">
-      <Container>
-        <Navbar.Brand>
-          <Link to="/">
-            <span className="title">{siteTitle}</span>
-            <span className="tagline">Websites & Software</span>
-          </Link>
-        </Navbar.Brand>
+import useSiteMetadata from '../../hooks/use-site-metadata';
 
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+export const Header = () => {
+  const { title, tagline, phone, email } = useSiteMetadata();
 
-        <Navbar.Collapse
-          id="responsive-navbar-nav"
-          className="justify-content-end"
-        >
-          <Nav className="me-auto"></Nav>
+  const phoneCTA =
+    'Ready to take your project to the next level? Call me now to discuss your software development needs and get started.';
+  const emailCTA =
+    "Let's build something great together! Contact me now to discuss your software development needs.";
 
-          <Nav className="nav-main-menu">
-            <Link to="/about" className="nav-link">
-              About
+  return (
+    <header>
+      <Navbar collapseOnSelect expand="sm">
+        <Container>
+          <Navbar.Brand>
+            <Link to="/">
+              <span className="title">{title}</span>
+              <span className="tagline">{tagline}</span>
             </Link>
-            <Link to="/services" className="nav-link">
-              Services
-            </Link>
-            <Link to="/contact" className="nav-link">
-              Contact
-            </Link>
-          </Nav>
+          </Navbar.Brand>
 
-          <Nav className="smallview-nav-contact d-sm-none">
-            <div>
-              <p className="h4 highlight">Why wait, lets talk!</p>
-              <p>
-                <a title="Call me at 607-386-5872" href="tel:607-386-5872">
-                  607-386-5872
-                </a>
-                <br />
-                <Link title="Lets discuss your business!" to="/contact">
-                  hello@racheldotey.com
-                </Link>
-              </p>
-            </div>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-  </header>
-);
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+          <Navbar.Collapse
+            id="responsive-navbar-nav"
+            className="justify-content-end"
+          >
+            <Nav className="me-auto"></Nav>
+
+            <Nav className="nav-main-menu">
+              <Link to="/about" className="nav-link">
+                About
+              </Link>
+              <Link to="/services" className="nav-link">
+                Services
+              </Link>
+              <Link to="/contact" className="nav-link">
+                Contact
+              </Link>
+            </Nav>
+
+            <Nav className="smallview-nav-contact d-sm-none">
+              <div>
+                <p className="h4 highlight">Why wait, lets talk!</p>
+                <p>
+                  <a title={phoneCTA} href={`tel:${phone}`}>
+                    {phone}
+                  </a>
+                  <br />
+                  <Link title={emailCTA} to="/contact">
+                    {email}
+                  </Link>
+                </p>
+              </div>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </header>
+  );
 };
 
-Header.defaultProps = {
-  siteTitle: ``,
-};
+Header.propTypes = {};
+Header.defaultProps = {};
 
 export default Header;
