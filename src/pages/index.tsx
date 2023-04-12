@@ -48,14 +48,16 @@ const IntroBanner: React.FC = () => {
             </div>
           </Col>
           <Col sm={12} md={8} lg={6} className="pt-3">
-            <span className="h2">It's great to have you visit!</span>
+            <span className="h2 text-center">Hello and welcome!</span>
             <p className="lead">
-              I'm a software developer with experience designing and developing
-              interactive web applications.
+              I'm a software developer with a passion for creating innovative
+              solutions using the latest technologies. Whether you need a
+              responsive web design, a robust application, or a cutting-edge
+              system integration, I am here to help.
             </p>
             <p className="lead">
-              I am interested in helping small businesses gain visibility on the
-              internet. Create strong brands and stay competitive in the market.
+              Take a look around and discover how I can bring your ideas to
+              life.
             </p>
             <div className="text-center">
               <Link to="/services" className="button button-light">
