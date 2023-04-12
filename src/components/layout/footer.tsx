@@ -52,21 +52,19 @@ export const Footer: React.FC = () => {
           <Col sm={12} md={4}>
             <div className="text-center text-md-left mb-5 mb-md-0">
               <h4>
-                How can I
-                <br />
-                make your business
-                <br />
-                <span className="highlight">better</span>?
+                Get in touch
               </h4>
-
+              <p>
+                Transform your online presence with professional development
+                services.
+              </p>
               <div className="call-to-action">
                 <Link
-                  title="I would love to talk about your business!"
+                  title="Start your journey towards an outstanding website today!"
                   to="/contact"
                   className="button button-dark"
                 >
-                  <span>Lets discuss your ideas</span>
-                  <i className="fal fa-long-arrow-right" aria-hidden="true"></i>
+                  <span>Contact Me Today</span>
                 </Link>
               </div>
             </div>
