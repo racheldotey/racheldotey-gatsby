@@ -6,6 +6,7 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 
 import Layout from "../components/layout";
 import CallOutBanner from "../components/banner-callout";
+import Seo from '../components/seo';
 
 const ServicesPage: React.FC<PageProps> = () => {
   return (
@@ -133,4 +134,4 @@ const ServicesPage: React.FC<PageProps> = () => {
 
 export default ServicesPage;
 
-export const Head: HeadFC = () => <title>Services | RachelDotey.ninja</title>;
+export const Head: HeadFC = () => <Seo title="Services"></Seo>;

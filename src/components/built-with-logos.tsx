@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 
-export default () => {
+export const BuiltWithLogos: React.FC = () => {
   return (
     <div className="built-with-badges inline-images">
       <a
@@ -128,3 +128,5 @@ export default () => {
     </div>
   );
 };
+
+export default BuiltWithLogos;

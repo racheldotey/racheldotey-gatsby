@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
-export const CallOutBanner = () => {
+export const CallOutBanner: React.FC = () => {
   return (
     <section className="callout-banner">
       <Container>
@@ -38,7 +38,7 @@ export const CallOutBanner = () => {
                   alt="This is the developer you are looking for..."
                   placeholder="blurred"
                   layout="fullWidth"
-                  style={{ maxHeight: "340px", maxWidth: "340px" }}
+                  style={{ maxHeight: '340px', maxWidth: '340px' }}
                 />
               </Link>
             </div>

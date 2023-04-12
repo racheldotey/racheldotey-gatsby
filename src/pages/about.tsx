@@ -10,10 +10,12 @@ import useSiteMetadata from '../hooks/use-site-metadata';
 import Layout from '../components/layout';
 import CallOutBanner from '../components/banner-callout';
 import SocialButtons from '../components/follow-my-social';
+import Seo from '../components/seo';
 
 //https://www.canva.com/templates/EADaoa2YgA8-pink-blue-design-resume/
 const AboutPage: React.FC<PageProps> = () => {
-  const { title, tagline, phone, email } = useSiteMetadata();
+  const { author } = useSiteMetadata();
+  const { phone, email } = author;
 
   const phoneCTA =
     'Ready to take your project to the next level? Call me now to discuss your software development needs and get started.';
@@ -86,4 +88,4 @@ const AboutPage: React.FC<PageProps> = () => {
 
 export default AboutPage;
 
-export const Head: HeadFC = () => <title>About Me | RachelDotey.ninja</title>;
+export const Head: HeadFC = () => <Seo title="About the Developer"></Seo>;

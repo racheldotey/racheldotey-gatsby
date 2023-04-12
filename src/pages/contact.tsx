@@ -4,6 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import Layout from "../components/layout";
 import ContactBanner from "../components/banner-contact";
+import Seo from '../components/seo';
 
 const ContactPage: React.FC<PageProps> = () => (
   <Layout>
@@ -28,6 +29,4 @@ const ContactPage: React.FC<PageProps> = () => (
 
 export default ContactPage;
 
-export const Head: HeadFC = () => (
-  <title>Contact Form | RachelDotey.ninja</title>
-);
+export const Head: HeadFC = () => <Seo title="Contact Me"></Seo>;

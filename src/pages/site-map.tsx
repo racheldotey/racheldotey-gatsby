@@ -4,6 +4,7 @@ import type { HeadFC, PageProps } from "gatsby";
 import { Container, Row, Col } from "react-bootstrap";
 
 import Layout from "../components/layout";
+import Seo from '../components/seo';
 
 const ServicesPage: React.FC<PageProps> = () => (
   <Layout>
@@ -62,4 +63,4 @@ const ServicesPage: React.FC<PageProps> = () => (
 
 export default ServicesPage;
 
-export const Head: HeadFC = () => <title>Site Map | RachelDotey.ninja</title>;
+export const Head: HeadFC = () => <Seo title="Site Map"></Seo>;

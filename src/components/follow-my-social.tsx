@@ -1,7 +1,7 @@
-import * as React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import * as React from 'react';
+import { StaticImage } from 'gatsby-plugin-image';
 
-export default () => {
+export const FollowMySocials: React.FC = () => {
   return (
     <div className="follow-my-social inline-images">
       <a
@@ -86,3 +86,5 @@ export default () => {
     </div>
   );
 };
+
+export default FollowMySocials;

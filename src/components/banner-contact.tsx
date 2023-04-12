@@ -6,8 +6,9 @@ import useSiteMetadata from '../hooks/use-site-metadata';
 import ContactForm from '../components/form-contact';
 import SocialButtons from './follow-my-social';
 
-const LocationColumn = () => {
-  const { title, tagline, phone, email } = useSiteMetadata();
+const LocationColumn: React.FC = () => {
+  const { author } = useSiteMetadata();
+  const { phone, email } = author;
 
   const phoneCTA =
     'Ready to take your project to the next level? Call me now to discuss your software development needs and get started.';
@@ -46,7 +47,7 @@ const LocationColumn = () => {
   );
 };
 
-const ContactBanner = () => (
+export const ContactBanner: React.FC = () => (
   <section className="contact-banner">
     <a href="#contact"></a>
     <Container className="d-none d-md-block">
@@ -58,7 +59,7 @@ const ContactBanner = () => (
           xl={5}
           className="text-center"
         >
-          {LocationColumn()}
+          <LocationColumn />
         </Col>
         <Col sm={{ order: 2, span: 12 }} md={7} lg={6} xl={5}>
           <ContactForm />
@@ -77,7 +78,9 @@ const ContactBanner = () => (
       </div>
       <Container>
         <Row className="justify-content-md-center py-5">
-          <Col>{LocationColumn()}</Col>
+          <Col>
+            <LocationColumn />
+          </Col>
         </Row>
       </Container>
     </div>

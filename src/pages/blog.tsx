@@ -70,6 +70,11 @@ export default BlogIndex
  */
 export const Head = () => <Seo title="All posts" />
 
+/**
+ * Gatsby's useStaticQuery React hook
+ *
+ * See: https://www.gatsbyjs.com/docs/how-to/querying-data/use-static-query/
+ */
 export const pageQuery = graphql`
   {
     site {

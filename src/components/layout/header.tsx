@@ -6,8 +6,10 @@ import Navbar from 'react-bootstrap/Navbar';
 
 import useSiteMetadata from '../../hooks/use-site-metadata';
 
-export const Header = () => {
-  const { title, tagline, phone, email } = useSiteMetadata();
+export const Header: React.FC = () => {
+  const { author, header } = useSiteMetadata();
+  const { tagline, title } = header;
+  const { phone, email } = author;
 
   const phoneCTA =
     'Ready to take your project to the next level? Call me now to discuss your software development needs and get started.';
@@ -65,8 +67,5 @@ export const Header = () => {
     </header>
   );
 };
-
-Header.propTypes = {};
-Header.defaultProps = {};
 
 export default Header;

@@ -1,31 +1,38 @@
-import type { GatsbyConfig } from "gatsby";
+import type { GatsbyConfig } from 'gatsby';
 
 const config: GatsbyConfig = {
   siteMetadata: {
     author: {
       name: 'Rachel Dotey',
       bio: 'Website And Software Development',
+      phone: '607-386-5872',
+      email: 'hello@racheldotey.com',
     },
-    email: 'hello@racheldotey.com',
+    header: {
+      tagline: 'Web & App Development',
+      title: 'RachelDotey.ninja',
+      url: 'https://racheldotey.ninja', // No trailing slash
+      description:
+        'Hi, my name is Rachel! I build interactive websites and software for clients all over the world.',
+      keywords:
+        'Responsive Web Design, Progressive Web Apps (PWA), Single-page Applications (SPA), Web Accessibility (WCAG 2.1), User Experience (UX), Search Engine Optimization (SEO), Web Security, Microservices, Serverless Architecture, Cloud Computing, JavaScript Frameworks (React, Angular, Vue), Web Components, Headless CMS, Web Performance Optimization (WPO), Artificial Intelligence (AI) and Machine Learning (ML) in web development, Blockchain technology in web development, Chatbots and voice assistants, Web animations',
+      subject: 'Full Stack Node.JS Application Development',
+    },
     image: {
       url: 'https://racheldotey.ninja/images/rachel-dotey-web-and-software-developer.jpg', // Path to your image you placed in the 'static' folder
       width: 1750,
       height: 1312,
       alt: 'Web design and software development by Rachel Dotey.',
     },
-    phone: '607-386-5872',
+    siteTitle: 'RachelDotey.ninja',
     siteUrl: 'https://racheldotey.ninja', // No trailing slash
-    tagline: 'Web App Development',
-    title: 'RachelDotey.ninja',
-    titleTemplate: '%s | RachelDotey.ninja',
-    defaultTitle: 'Website And Software Development',
-    description:
-      'Hi, my name is Rachel! I build interactive websites and software for clients all over the world.',
-    keywords:
-      'Responsive Web Design, Progressive Web Apps (PWA), Single-page Applications (SPA), Web Accessibility (WCAG 2.1), User Experience (UX), Search Engine Optimization (SEO), Web Security, Microservices, Serverless Architecture, Cloud Computing, JavaScript Frameworks (React, Angular, Vue), Web Components, Headless CMS, Web Performance Optimization (WPO), Artificial Intelligence (AI) and Machine Learning (ML) in web development, Blockchain technology in web development, Chatbots and voice assistants, Web animations',
-
-    /////
-    twitterUsername: '@RaeDeveloper',
+    social: {
+      github: 'https://github.com/racheldotey',
+      linkedin: 'https://www.linkedin.com/in/racheldotey/',
+      twitter: '@RaeDeveloper',
+      instagram: 'https://www.instagram.com/racheldotey/',
+      facebook: 'https://www.facebook.com/racheldotey/',
+    },
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin

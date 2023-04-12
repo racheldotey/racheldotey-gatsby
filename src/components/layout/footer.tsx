@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import PropTypes from 'prop-types';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -11,7 +10,7 @@ import useSiteMetadata from '../../hooks/use-site-metadata';
 import BuiltWithLogos from '../built-with-logos';
 import SocialButtons from '../follow-my-social';
 
-function CurrentScreenSizeBadge() {
+const CurrentScreenSizeBadge: React.FC = () => {
   return (
     <>
       <small className="text-muted">optimized for display on a</small>
@@ -33,10 +32,14 @@ function CurrentScreenSizeBadge() {
   );
 }
 
-export const Footer = ({ siteTitle }) => {
-  const { author, tagline, phone, email } = useSiteMetadata();
+export const Footer: React.FC = () => {
+  const { author, header } = useSiteMetadata();
+  const { tagline } = header;
+  const { phone, email } = author;
 
-  const copyright = `© 2012-${new Date().getFullYear()} ${author.name}, ${tagline}`;
+  const copyright = `© 2012-${new Date().getFullYear()} ${
+    author.name
+  }, ${tagline}`;
   const phoneCTA =
     'Ready to take your project to the next level? Call me now to discuss your software development needs and get started.';
   const emailCTA =
@@ -135,8 +138,5 @@ export const Footer = ({ siteTitle }) => {
     </footer>
   );
 };
-
-Footer.propTypes = {};
-Footer.defaultProps = {};
 
 export default Footer;

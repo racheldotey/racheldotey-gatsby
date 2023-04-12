@@ -4,6 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { StaticImage } from "gatsby-plugin-image";
 
 import Layout from "../components/layout";
+import Seo from '../components/seo';
 
 const NotFoundPage: React.FC<PageProps> = () => {
   return (
@@ -55,6 +56,4 @@ const NotFoundPage: React.FC<PageProps> = () => {
 
 export default NotFoundPage;
 
-export const Head: HeadFC = () => (
-  <title>Page Not found | RachelDotey.ninja</title>
-);
+export const Head: HeadFC = () => <Seo title="404 Not Found"></Seo>;
