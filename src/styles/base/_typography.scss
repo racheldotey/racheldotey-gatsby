@@ -24,19 +24,25 @@ a {
   color: $color-a-link-color;
   &:link {
     color: $color-a-link-color;
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.15rem;
+    -webkit-text-decoration-color: $color-a-link-color;
+    text-decoration-color: $color-a-link-color;
   }
 
   &:visited {
     color: $color-a-visited-color;
-    text-decoration: none;
+    -webkit-text-decoration-color: $color-a-link-color;
+    text-decoration-color: $color-a-link-color;
   }
 
   &:focus,
   &:hover,
   &:active {
     color: $color-a-active-color;
-    text-decoration: none;
+    -webkit-text-decoration-color: $color-a-active-color;
+    text-decoration-color: $color-a-active-color;
   }
 }
 
