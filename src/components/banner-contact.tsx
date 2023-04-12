@@ -1,10 +1,12 @@
 import * as React from 'react';
-
-import { Container, Row, Col } from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 import useSiteMetadata from '../hooks/use-site-metadata';
 import ContactForm from '../components/form-contact';
 import SocialButtons from './follow-my-social';
+import { LocationParagraph } from './snippets';
 
 const LocationColumn: React.FC = () => {
   const { author } = useSiteMetadata();
@@ -37,11 +39,7 @@ const LocationColumn: React.FC = () => {
       <hr />
       <div>
         <p className="h4">Location</p>
-        <p>
-          Working with clients across New England.
-          <br />
-          Based in Burlington Vermont.
-        </p>
+        <LocationParagraph />
       </div>
     </div>
   );

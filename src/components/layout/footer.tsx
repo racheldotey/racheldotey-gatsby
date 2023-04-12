@@ -6,9 +6,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import useSiteMetadata from '../../hooks/use-site-metadata';
-
 import BuiltWithLogos from '../built-with-logos';
 import SocialButtons from '../follow-my-social';
+import { LocationParagraph } from '../snippets';
 
 const CurrentScreenSizeBadge: React.FC = () => {
   return (
@@ -30,7 +30,7 @@ const CurrentScreenSizeBadge: React.FC = () => {
       <small className="text-muted">screen</small>
     </>
   );
-}
+};
 
 export const Footer: React.FC = () => {
   const { author, header } = useSiteMetadata();
@@ -72,12 +72,9 @@ export const Footer: React.FC = () => {
             </div>
           </Col>
           <Col xs={12} sm={6} md={4} className="mb-xs-3">
-            <div className="text-center text-md-left mb-5 mb-sm-0">
-              <h4 className="text-muted">Location</h4>
-              <p className="text-muted">
-                Working with small businesses across New England. Based in
-                Burlington Vermont.
-              </p>
+            <div className="text-center text-md-left mb-5 mb-sm-0 text-muted">
+              <h4>Location</h4>
+              <LocationParagraph />
             </div>
           </Col>
           <Col xs={12} sm={6} md={4}>

@@ -1,11 +1,14 @@
-import * as React from "react";
-import { Link } from "gatsby";
-import type { HeadFC, PageProps } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import * as React from 'react';
+import { Link } from 'gatsby';
+import type { HeadFC, PageProps } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
 
-import Layout from "../components/layout";
-import CallOutBanner from "../components/banner-callout";
+import Layout from '../components/layout';
+import CallOutBanner from '../components/banner-callout';
 import Seo from '../components/seo';
 
 const ServicesPage: React.FC<PageProps> = () => {
@@ -48,11 +51,11 @@ const ServicesPage: React.FC<PageProps> = () => {
                       <div className="image-framed">
                         <StaticImage
                           src="../images/stock-colorful-phone.jpg"
-                          formats={["auto", "webp", "avif"]}
+                          formats={['auto', 'webp', 'avif']}
                           alt="This is the developer you are looking for..."
                           placeholder="blurred"
                           layout="fullWidth"
-                          style={{ maxHeight: "340px", maxWidth: "340px" }}
+                          style={{ maxHeight: '340px', maxWidth: '340px' }}
                         />
                       </div>
                       <ul className="list-muted mt-3">
@@ -73,7 +76,7 @@ const ServicesPage: React.FC<PageProps> = () => {
                           alt="This is the developer you are looking for..."
                           placeholder="blurred"
                           layout="fullWidth"
-                          style={{ maxHeight: "340px", maxWidth: "340px" }}
+                          style={{ maxHeight: '340px', maxWidth: '340px' }}
                         />
                       </div>
                       <ul className="list-muted mt-3">
@@ -93,7 +96,7 @@ const ServicesPage: React.FC<PageProps> = () => {
                           alt="This is the developer you are looking for..."
                           placeholder="blurred"
                           layout="fullWidth"
-                          style={{ maxHeight: "340px", maxWidth: "340px" }}
+                          style={{ maxHeight: '340px', maxWidth: '340px' }}
                         />
                       </div>
                       <ul className="list-muted mt-3">

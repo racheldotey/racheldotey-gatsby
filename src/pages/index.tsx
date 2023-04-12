@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { Link, HeadFC, PageProps } from 'gatsby';
-import { Container, Row, Col } from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import { StaticImage } from 'gatsby-plugin-image';
 
 import ContactBanner from '../components/banner-contact';

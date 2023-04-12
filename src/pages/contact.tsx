@@ -1,9 +1,11 @@
-import * as React from "react";
-import type { HeadFC, PageProps } from "gatsby";
-import { Container, Row, Col } from "react-bootstrap";
+import * as React from 'react';
+import type { HeadFC, PageProps } from 'gatsby';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
-import Layout from "../components/layout";
-import ContactBanner from "../components/banner-contact";
+import Layout from '../components/layout';
+import ContactBanner from '../components/banner-contact';
 import Seo from '../components/seo';
 
 const ContactPage: React.FC<PageProps> = () => (

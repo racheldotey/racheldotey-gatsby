@@ -1,9 +1,11 @@
-import * as React from "react";
-import { Link, HeadFC, PageProps } from "gatsby";
-import { Container, Row, Col } from "react-bootstrap";
-import { StaticImage } from "gatsby-plugin-image";
+import * as React from 'react';
+import { Link, HeadFC, PageProps } from 'gatsby';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import { StaticImage } from 'gatsby-plugin-image';
 
-import Layout from "../components/layout";
+import Layout from '../components/layout';
 import Seo from '../components/seo';
 
 const NotFoundPage: React.FC<PageProps> = () => {
@@ -18,7 +20,7 @@ const NotFoundPage: React.FC<PageProps> = () => {
                 alt="Honestly, I'm as lost as you are..."
                 placeholder="blurred"
                 layout="fullWidth"
-                style={{ maxHeight: "340px", maxWidth: "340px" }}
+                style={{ maxHeight: '340px', maxWidth: '340px' }}
               />
             </div>
           </Col>
